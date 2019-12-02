@@ -35,12 +35,15 @@ input {
 #header input{
   background-color: white;
   border-radius: 10px;
-/*  border-bottom-left-radius: 20px;*/
   width: 800px;
   height: 40px;
   margin-left: 20px;
   font-size: 1.2em;
   vertical-align: middle;
+  background-image: url(../img/baseline_search_black_24dp.png);
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-size: 40px;
 }
 #header img{
   height: 50px;
@@ -53,6 +56,36 @@ input {
 }
 #header li:nth-child(2){
   margin-right: 20px;
+  width: 200px;
+  height: 50px;
+  
+}
+#header a{
+  color: white;
+  /* display: block; */
+  line-height: 50px;
+  padding: 10px;
+  height: 50px;
+  width: 100px;
+  /* margin-right: 20px; */
+}
+#header a:nth-child(1){
+  margin-right: 30px;
+  background-color: #F57180;
+  border-radius: 10px;
+}
+#header a:nth-child(2){
+  text-decoration: underline;
+}
+#header a:nth-child(1):hover{
+  background-color: white;
+  border-radius: 10px;
+  color: #F57180;
+}
+#header a:nth-child(2):hover{
+  background-color: white;
+  color: black;
+  border-radius: 10px;
 }
 
 /*======= contents =======*/
