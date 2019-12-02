@@ -1,0 +1,52 @@
+/* CSS document */
+
+/*======= contents =======*/
+#contents {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  background: rgba(0,0,0,0.2);
+}
+
+/*------- bg -------*/
+.bg {
+  height: 500px;
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: pink;
+  display: flex;
+}
+
+.bg ul{
+  height: 400px;
+  width: 300px;
+  margin-left: 40px;
+  margin-top: 50px;
+  text-align: center;
+  background-color: white;
+}
+
+/*------- img -------*/
+.img {
+  margin-top: 50px;
+  margin-left: 30px;
+  height: 400px;
+  width: 300px;
+  background-color: skyblue;
+}
+
+#header {
+  height: 100px;
+}
+
+#header p{
+  text-align: center;
+}
+
+#header img{
+  height: 60px;
+  margin-top: 20px;
+}

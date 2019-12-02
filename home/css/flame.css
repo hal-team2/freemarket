@@ -1,0 +1,83 @@
+/* CSS document */
+
+/*====== 初期化 ======*/
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+
+/* <input> */
+input {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+}
+
+/*======= wrapper =======*/
+#wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #38429D;
+}
+
+/*======= header =======*/
+#header {
+  width: 100%;
+  margin-bottom: 15px;
+  line-height: 60px;
+}
+#header input{
+  background-color: white;
+  border-radius: 10px;
+/*  border-bottom-left-radius: 20px;*/
+  width: 800px;
+  height: 40px;
+  margin-left: 20px;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+#header img{
+  height: 50px;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+#header ul{
+  display: flex;
+  justify-content: space-between;
+}
+#header li:nth-child(2){
+  margin-right: 20px;
+}
+
+/*======= contents =======*/
+#contents {
+/*  margin-top: 60px;*/
+/*  background-color: red;*/
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:1000px){
+  /*スマホ*/
+  #header {
+    height: 150px;
+    background-color: olivedrab;
+  }
+  
+  
+}
+
+
+@media screen and (min-width:1001px){
+  /*PC*/
+  #header {
+    height: 60px;
+    background-color: gray;
+  }
+}
