@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+.header{
+	height: 150px;
+}
+
+.header img{
+	height: 100px;
+	margin-top: 25px;
+}
+
+.main{
+	width: 50%;
+}
+
+.font_b{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+/********項目名****************/
+
+.sub{
+	text-align: left;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 5px 30px;
+}
+
+.box{
+	text-align: left;
+	padding: 0px 15px;
+}
+
+
+/********必須マーク*************/
+
+.required{
+	background-color: #dc143c;
+	color: #fff;
+	font-size: 11px;
+	padding: 0px 7px;
+	margin-left: 5px;
+}
+
+/**********テキストボックス***********/
+
+.textbox{
+	width: 94%;
+	padding : 10px 8px;
+	margin: 3px 3px 3px 12px;
+	border-radius : 5px;
+	border-top: 1px solid #aaa;
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	background-color: #fff;
+	font-size: 16px;
+}
+
+
+/********テキストエリア*************/
+
+textarea{
+	resize: vertical;
+	min-height: 40px;
+	width: 94%;
+	height: 100px;
+	padding : 10px 8px;
+	margin: 3px 3px 3px 12px;
+	border-radius : 5px;
+	background-color: #fff;
+	font-size: 16px;
+}
+
+
+/*******セレクト*****************/
+
+select{
+	width: 96%;
+	padding : 10px 8px;
+	margin: 3px 3px 3px 12px;
+	border-radius : 5px;
+	background-color: #fff;
+	font-size: 16px;
+}
+
+
+/******価格入力****************/
+
+.pricebox{
+	float: right;
+	text-align: right;
+}
+
+.pricebox input{
+	padding : 10px 8px;
+	margin: 3px 33px 3px 0px;
+	border-radius : 5px;
+	border-top: 1px solid #aaa;
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	background-color: #fff;
+	font-size: 16px;
+	text-align: right;
+}
+
+
+/********ボタン装飾***************/
+
+.bt-design{
+	width: 80%;
+	padding : 15px;
+	border-radius: 5px;
+	background-color: crimson;
+	font-size: 16px;
+	color: #fff;
+
+	appearance: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+
+}
+
+.bt-design2{
+	width: 40%;
+	padding : 10px;
+	border-radius: 5px;
+	background-color: #a9a9a9;
+	font-size: 16px;
+	color: #fff;
+
+	appearance: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+
+/*******fotter内テキスト***********/
+.content{
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
