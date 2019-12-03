@@ -16,7 +16,7 @@ $(window).on('load resize',function(){
     boxWidth = (mw - 120) / 6;
   }
   else if(mw > 1000){
-    boxWidth = (mw - 120) / 4;
+    boxWidth = (mw - 120) / 5;
   }
   else {
     boxWidth = (mw - 120) / 3;
