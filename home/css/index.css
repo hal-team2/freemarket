@@ -75,6 +75,11 @@
 @media screen and (max-width:1000px){
   /*スマホ*/
   
+  /*======= banner ========*/
+  #banner {
+    visibility: hidden;
+    margin-bottom: -500px;
+  }
   
 }
 @media screen and (min-width:1001px){
