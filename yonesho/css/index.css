@@ -51,6 +51,10 @@
 /*  width: 230px;*/
   background-color: #8CA5FF;
 }
+.box a{
+  display:block;
+  height: 230px;
+}
 
 
 /*------- hover -------*/
