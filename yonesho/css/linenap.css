@@ -14,9 +14,9 @@
   height: 500px;
   width: 700px;
   position: absolute;
-  top: 40%;
+  top: 100px;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%);
   background-color: white;
   display: flex;
   border-radius: 20px;
