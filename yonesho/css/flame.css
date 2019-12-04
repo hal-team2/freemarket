@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #38429D;
+
+}
 
 /* <input> */
 input {
@@ -20,11 +24,12 @@ input {
 }
 
 /*======= wrapper =======*/
-#wrapper {
+/* #wrapper {
   width: 100%;
+  height: auto;
   margin: 0 auto;
   background-color: #38429D;
-}
+} */
 
 /*======= header =======*/
 #header {
