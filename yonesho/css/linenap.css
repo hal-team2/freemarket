@@ -21,15 +21,12 @@
   display: flex;
   border-radius: 20px;
 }
-
 .bg ul{
   height: 400px;
   width: 300px;
   margin-left: 40px;
   margin-top: 50px;
   text-align: center;
-}
-.bg li{
 }
 .bg li:nth-child(1){
   line-height: 80px;
@@ -66,6 +63,13 @@
   height: 400px;
   width: 300px;
   background-color: skyblue;
+  /* line-height: 300px; */
+}
+.img img{
+  width: 300px;
+  position: relative;
+  top: 50%;
+  transform: translate(0,-50%);
 }
 
 /*------- backButton -------*/

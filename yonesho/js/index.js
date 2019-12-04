@@ -32,6 +32,7 @@ $(function(){
     boxWidth = (mw - 120) / 3;
   }
   
+  $('.box img').css('width',boxWidth);
   $('.box').css('width',boxWidth);
   
   var $works_list = $('#contents');
