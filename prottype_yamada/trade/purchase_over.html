@@ -5,33 +5,47 @@
     <title>
         購入完了
     </title>
-    <link rel="stylesheet" href="purchase.css">
+    <link rel="stylesheet" href="./css/p_confirm.css">
 </head>
 <body>
 <div id="wrap">
-<h1>購入完了</h1>
-<p>購入が完了しました。商品の到着をお待ちください</p>
+        <div id="header">
+                <p><a href=""><img src="img/logo_sq.png"></a></p>
+        </div>    
+    <div class="main">
+        <h1>購入完了</h1>
+        <p class="over">購入が完了しました。商品の到着をお待ちください</p>
 
-<p><a href="">TOPに戻る</a>
+        <p><a href="">TOPに戻る</a></p>
 
-<h2>評価</h2>
-<p>商品の確認が出来次第、取引相手を評価してください</p>
-<p>取引相手名:△△△△△</p>
-<h3>取引中の態度、誠実さ</h3>
-<ul class="evalu">
-    <li><input type="radio" name="evalu_attitude" value="att_good">良い</li>
-    <li><input type="radio" name="evalu_attitude" value="att_well">ふつう</li>
-    <li><input type="radio" name="evalu_attitude" value="att_bad">悪い</li>
-</ul>
 
-<h3>取引の円滑さ</h3>
-<ul class="evalu">
-        <li><input type="radio" name="evalu_smoothness" value="smo_good">良い</li>
-        <li><input type="radio" name="evalu_smoothness" value="smo_well">ふつう</li>
-        <li><input type="radio" name="evalu_smoothness" value="smo_bad">悪い</li>
-</ul>
-<p><a href="trade_over.html">評価する</a></p>
-
+        <hr>
+        <h2>評価</h2>
+        <p>商品の確認が出来次第、取引相手を評価してください</p>
+        <p class="t_partner">取引相手名:△△△△△</p>
+        <div id="eval">
+        <div class="eval_list">
+            <h3 class="att">取引中の態度、誠実さ</h3>
+            <ul>
+                <li><input type="radio" name="evalu_attitude" value="att_good">良い</li>
+                <li><input type="radio" name="evalu_attitude" value="att_well">ふつう</li>
+                <li><input type="radio" name="evalu_attitude" value="att_bad">悪い</li>
+            </ul>
+        </div>
+        <div class="eval_list">    
+            <h3 class="smo">取引の円滑さ</h3>
+            <ul>
+                    <li><input type="radio" name="evalu_smoothness" value="smo_good">良い</li>
+                    <li><input type="radio" name="evalu_smoothness" value="smo_well">ふつう</li>
+                    <li><input type="radio" name="evalu_smoothness" value="smo_bad">悪い</li>
+            </ul>
+        </div>
+        </div>
+        <p class="pagechange"><a href="trade_over.html">評価する</a></p>
+    </div>
+    <div class="footer">
+            <div class="copyright"><p>&copy; TRUSTme</p></div>
+    </div>
 </div>
 </body>
 </html>
