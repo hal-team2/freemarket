@@ -1,0 +1,94 @@
+/* CSS document */
+
+/*======= contents =======*/
+#contents {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  background-color: #38429D;
+  z-index: -1;
+}
+
+/*------- bg -------*/
+.bg {
+  height: 500px;
+  width: 700px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: white;
+  display: flex;
+  border-radius: 20px;
+}
+
+.bg ul{
+  height: 400px;
+  width: 300px;
+  margin-left: 40px;
+  margin-top: 50px;
+  text-align: center;
+}
+.bg li{
+}
+.bg li:nth-child(1){
+  line-height: 80px;
+  height: 80px;
+
+}
+.bg li:nth-child(2){
+  border-bottom: solid black 1px;
+}
+.bg li:nth-child(3){
+  /* margin-bottom: 200px; */
+  line-height: 200px;
+  border: solid black 1px;
+  margin: 20px;
+}
+.bg li:nth-child(4){
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: solid black 1px;
+  float: left;
+}
+.bg li:nth-child(5){
+  float: left;
+  line-height: 50px;
+  margin-left: 30px;
+
+}
+
+/*------- img -------*/
+.img {
+  margin-top: 50px;
+  margin-left: 30px;
+  height: 400px;
+  width: 300px;
+  background-color: skyblue;
+}
+
+/*------- backButton -------*/
+.backButton {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: white;
+  line-height: 60px;
+  text-align: center;
+  margin: 20px;
+}
+.backButton img{
+  vertical-align: middle;
+  width: 40px;
+}
+.backButton a{
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  vertical-align: middle;
+}
+.backButton a:hover{
+  background: rgba(0,0,0,0.5);
+}
