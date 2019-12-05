@@ -78,36 +78,9 @@ input {
 
 /*======= contents =======*/
 #contents {
-/*  margin-top: 60px;*/
-/*  background-color: red;*/
   width: 100%;
   margin: 0 auto;
 }
-
-/*======= controller =======*/
-
-/*#controller {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 150px;
-  background-color: white;
-  line-height: 150px;
-}
-#controller img{
-  height: 100px;
-  margin-top: 10px;
-  vertical-align: middle;
-}
-#controller ul{
-  display: flex;
-  justify-content: space-around;
-}
-#controller li{
-  text-align: center;
-  vertical-align: middle;
-  width: 180px;
-}*/
 
 
 /************* スマホ*************/
@@ -128,23 +101,16 @@ input {
     background-size: 90px;
     background-position: 10px center;
     border-radius: 20px;
-/*    margin-bottom: 50px;*/
   }
   #header li:nth-child(2){
     visibility: hidden;
   }
   #header ul{
-/*    background-color: red;*/
   }
   #header li:nth-child(1){
     margin-left: 50px;
     line-height: 150px;
   }
-  
-  /*======= controller ========*/
-  /*#controller {
-    visibility: visible;
-  }*/
   
 }
 /***********************************/
@@ -174,10 +140,5 @@ input {
     background-position: 10px center;
     border-radius: 10px;
   }
-
-  /*======= controller =======*/
-  /*#controller {
-    visibility: hidden;
-  }*/
 }
 /**************************************/

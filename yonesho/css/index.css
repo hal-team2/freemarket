@@ -25,12 +25,12 @@
 }
 
 /*======= category =======*/
-#category {
+#favoriteName {
   height: 100px;
   width: 100%;
   margin-bottom: 20px;
 }
-#category ul{
+#favoriteName ul{
   position: relative;
   top: 50%;
   left: 50%;
@@ -38,7 +38,7 @@
   display: flex;
   justify-content: space-around;
 }
-#category li{
+#favoriteName li{
  text-align: center;
   line-height: 50px;
   background-color: gainsboro;
@@ -140,17 +140,17 @@
   }
   
   /*======= category =======*/
-  #category {
+  #favoriteName {
     font-size: 200%;
   }
-  #category ul{
+  #favoriteName ul{
     width: 1300px;
   }
-  #category li{
+  #favoriteName li{
     width: 200px;
   }
-  #category li:nth-child(1),
-  #category li:nth-child(6) {
+  #favoriteName li:nth-child(1),
+  #favoriteName li:nth-child(6) {
     visibility: hidden;
   }
 }
@@ -158,20 +158,20 @@
   /*PC*/
   
   /*======= category =======*/
-  #category ul{
+  #favoriteName ul{
     width: 1200px;
   }
-  #category li{
+  #favoriteName li{
     width: 150px;
   }
-  #category li:nth-child(1),
-  #category li:nth-child(6) {
+  #favoriteName li:nth-child(1),
+  #favoriteName li:nth-child(6) {
     background-color: white;
     height: 50px;
     width: 50px;
     vertical-align: middle;
   }
-  #category img{
+  #favoriteName img{
     position: relative;
     left: 50%;
     transform: translate(-85%);
