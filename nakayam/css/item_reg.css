@@ -2,15 +2,12 @@
 
 .header{
 	height: 150px;
+	background-color: gray;
 }
 
 .header img{
 	height: 100px;
 	margin-top: 25px;
-}
-
-.main{
-	width: 50%;
 }
 
 .font_b{
@@ -24,7 +21,7 @@
 .sub{
 	text-align: left;
 	font-weight: bold;
-	font-size: 16px;
+/*	font-size: 16px;*/
 	padding: 5px 30px;
 }
 
@@ -56,7 +53,7 @@
 	border-right: 1px solid #aaa;
 	border-bottom: 1px solid #aaa;
 	background-color: #fff;
-	font-size: 16px;
+/*	font-size: 16px;*/
 }
 
 
@@ -71,7 +68,7 @@ textarea{
 	margin: 3px 3px 3px 12px;
 	border-radius : 5px;
 	background-color: #fff;
-	font-size: 16px;
+/*	font-size: 16px;*/
 }
 
 
@@ -83,7 +80,7 @@ select{
 	margin: 3px 3px 3px 12px;
 	border-radius : 5px;
 	background-color: #fff;
-	font-size: 16px;
+/*	font-size: 16px;*/
 }
 
 
@@ -103,7 +100,7 @@ select{
 	border-right: 1px solid #aaa;
 	border-bottom: 1px solid #aaa;
 	background-color: #fff;
-	font-size: 16px;
+/*	font-size: 16px;*/
 	text-align: right;
 }
 
@@ -142,7 +139,43 @@ select{
 
 /*******fotter内テキスト***********/
 .content{
-		width: 50%;
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+.copyright p{
+	color: #fff;
+}
+
+
+
+
+/************* スマホ*************/
+@media screen and (max-width:1000px){
+
+	.main{
+		width: 90%;
+	}
+
+	.content{
+		width: 90%;
+		text-align: center;
+	}
+}
+/***********************************/
+
+
+/*************** PC ****************/
+@media screen and (min-width:1001px){
+
+	.main{
+		width: 50%;
+		font-size: 16px;
+	}
+
+	.content{
+		width: 50%;
+	}
+
+}
+/**************************************/
