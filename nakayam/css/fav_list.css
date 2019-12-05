@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+body{
+	background-color: #f5f5f5;
+}
+
+
+.header{
+	height: 150px;
+	background-color: gray;
+}
+
+.header img{
+	height: 100px;
+	margin-top: 25px;
+}
+
+
+/********リスト********/
+.list{
+	text-align: left;
+}
+
+/******色変え*************/
+
+#list1 a{
+	background-color: #add8e6;
+}
+#list1 p{
+	background-color: #add8e6;
+}
+#list2 a{
+	background-color: #e6e6fa;
+}
+#list2 p{
+	background-color: #e6e6fa;
+}
+#list3 a{
+	background-color: #fffacd;
+}
+#list3 p{
+	background-color: #fffacd;
+}
+
+
+/*********画像**************/
+
+.imgbox img{
+	display: block;
+	object-fit: contain;
+	margin: 0 auto;
+}
+
+.imgbox{
+	display: inline-block;
+	border: 1px solid #d3d3d3;
+}
+
+
+/********アイコン*************/
+.icon{
+	margin-top: -5px;
+	margin-right: 10px;
+	height: 25px;
+	vertical-align: middle;
+}
+
+.icon2{
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+	height: 25px;
+	vertical-align: middle;
+}
+
+
+/*******fotter内テキスト***********/
+.content{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+.copyright p{
+	color: #888;
+}
+
+
+
+/************* スマホ*************/
+@media screen and (max-width:1000px){
+
+	body{
+		font-size: 33px;
+	}
+
+	.main{
+		width: 90%;
+	}
+
+	.content{
+		width: 90%;
+		text-align: center;
+	}
+
+
+	.list ul{
+		height:230px;
+	}
+
+	.list a{
+		text-decoration: none;
+		color: black;
+		display: block;
+		width: 100%;
+	}
+
+	.list p{
+		display: inline;
+		font-weight: bold;
+	}
+
+	/*********画像**************/
+
+	.imgbox img{
+		height: 198px;
+		width: 198px;
+	}
+
+	.imgbox{
+		margin: 20px;
+		height: 200px;
+		width: 200px;
+		border: 1px solid #d3d3d3;
+	}
+
+	#list1 li a{
+		background-color: #fff;
+	}
+
+
+
+	/*****非表示**********/
+	.icon2{
+		visibility: hidden;
+	}
+
+	#over{
+		visibility: hidden;
+	}
+
+
+}
+/***********************************/
+
+
+/*************** PC ****************/
+@media screen and (min-width:1001px){
+
+	.main{
+		width: 900px;
+		font-size: 16px;
+	}
+
+	.content{
+		width: 900px;
+	}
+
+
+	/********リスト********/
+
+	.list a{
+		text-decoration: underline;
+		color: black;
+	}
+
+	.list a:hover{
+		color: blue;
+	}
+
+	.list p{
+		padding-bottom: 5px;
+		padding-top: 5px;
+		padding-left: 20px;
+		font-weight: bold;
+	}
+
+	.list ul{
+		padding-left: 50px;
+	}
+
+	/*********画像**************/
+
+	.imgbox img{
+		height: 128px;
+		width: 128px;
+	}
+
+	.imgbox{
+		margin: 12px;
+		height: 130px;
+		width: 130px;
+		display: inline-block;
+		border: 1px solid #d3d3d3;
+	}
+
+	#over{
+		display: inline-block;
+	}
+}
+/**************************************/
