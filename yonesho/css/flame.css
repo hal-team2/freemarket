@@ -86,7 +86,7 @@ input {
 
 /*======= controller =======*/
 
-#controller {
+/*#controller {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -102,14 +102,12 @@ input {
 #controller ul{
   display: flex;
   justify-content: space-around;
-/*    background-color: blue;*/
 }
 #controller li{
   text-align: center;
-/*    background-color: green;*/
   vertical-align: middle;
   width: 180px;
-}
+}*/
 
 
 /************* スマホ*************/
@@ -144,9 +142,9 @@ input {
   }
   
   /*======= controller ========*/
-  #controller {
+  /*#controller {
     visibility: visible;
-  }
+  }*/
   
 }
 /***********************************/
@@ -178,8 +176,8 @@ input {
   }
 
   /*======= controller =======*/
-  #controller {
+  /*#controller {
     visibility: hidden;
-  }
+  }*/
 }
 /**************************************/
