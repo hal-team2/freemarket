@@ -24,20 +24,54 @@
   background-color: gray;
 }
 
+/*======= category =======*/
+#category {
+  height: 100px;
+  width: 100%;
+/*  background-color: aqua;*/
+  margin-bottom: 20px;
+}
+#category ul{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: space-around;
+}
+#category li{
+/*  text-align: center;*/
+  line-height: 50px;
+  background-color: gainsboro;
+  border-radius: 25px;
+}
+#category img{
+/*  position: relative;*/
+/*  left: 50%;*/
+/*  transform: translate(-50%);*/
+  height: 50px;
+}
+
 /*------- box -------*/
 .box {
   /* height: 230px; */
   border-radius: 10px;
   /* border: 1px solid gray; */
   border-bottom-left-radius: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  
+/*  transition: border 0.5, background-color 0.5, ease, 02s;*/
 }
 .box img{
   border-radius: 10px;
+  border-bottom-left-radius: 50px;
 }
-/* .box.test{ */
-  /* height: auto; */
-/* } */
+.box.img {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 .box.x1 {
   height: 230px;
   background-color: #FFFB8B;
@@ -65,12 +99,25 @@
   /* height: 230px; */
 }
 
+.boxSadow:hover::before{
+  height: 100px;
+  width: 100px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left 0;
+  background-color: red;
+}
 
 /*------- hover -------*/
 
+.box:hover{
+  background-color: #F57180;
+  border-bottom-left-radius: 47px;
+}
+
 .box.x2:hover {
   height: 300px;
-  background-color: #F57180;
 }
 
 .box.x3:hover {
@@ -87,6 +134,12 @@
   background: rgba(0,0,0,0.4);
 }
 
+.box img:hover::before {
+  background-color: rgba(0,0,0,0.5);
+  width: 100px;
+  height: 100px;
+}
+
 @media screen and (max-width:1000px){
   /*スマホ*/
   
@@ -96,8 +149,43 @@
     margin-bottom: -500px;
   }
   
+  /*======= category =======*/
+  #category {
+    font-size: 200%;
+  }
+  #category ul{
+    width: 1300px;
+  }
+  #category li{
+    width: 200px;
+  }
+  #category li:nth-child(1),
+  #category li:nth-child(6) {
+    visibility: hidden;
+  }
 }
 @media screen and (min-width:1001px){
   /*PC*/
+  
+  /*======= category =======*/
+  #category ul{
+    width: 1200px;
+  }
+  #category li{
+    width: 150px;
+  }
+  #category li:nth-child(1),
+  #category li:nth-child(6) {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+  }
+  #category img{
+    position: relative;
+    left: 50%;
+    transform: translate(-85%);
+    vertical-align: middle;
+  }
 }
 
