@@ -144,6 +144,7 @@
   #banner {
     visibility: hidden;
     margin-bottom: -500px;
+    margin-top: 180px;
   }
   
   /*======= category =======*/
