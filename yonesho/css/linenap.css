@@ -115,10 +115,26 @@
     width: 80px;
 /*    margin-left: 10px;*/
   }
-  .backButton a{
+  .backButton a,
+  .cart a{
     width: 100px;
     height: 100px;
     border-radius: 50px;
+  }
+  .cart {
+    position: absolute;
+    top: 10px;
+    /* left: 0; */
+    right: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    /* background-color: white; */
+    line-height: 100px;
+    margin: 20px;
+  }
+  .cart img{
+    width: 100px;
   }
   
 }
