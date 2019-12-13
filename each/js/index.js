@@ -29,7 +29,7 @@ $(function(){
     boxWidth = (mw - 120) / 5;
   }
   else {
-    boxWidth = (mw - 120) / 3;
+    boxWidth = (mw - 120) / 2;
   }
   
   $('.box img').css('width',boxWidth);
@@ -40,7 +40,7 @@ $(function(){
     itemSelector: '.box',
     isFitWidth: true,
     columnWidth: boxWidth,
-    gutter: 15
+    gutter: 40
   })
 });
 
