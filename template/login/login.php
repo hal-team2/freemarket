@@ -5,12 +5,12 @@
   <title>ログイン画面</title>
   <meta name="description" content="サイトキャプションを入力">
   <meta name="keywords" content="サイトキーワードを,で区切って入力">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="../../public/css/main.css">
+  <link rel="stylesheet" href="../../each/css/login/login.css">
 </head>
 <body>
 <div class="header">
-  <p><a href="../yonesho/index.html"><img src="./img/logo.png" alt="TRUSTME"></a></p>
+  <p><a href="../index.php"><img src="../../image/site/logo.png" alt="TRUSTME"></a></p>
 </div>
 <div class="main">
     <br>
@@ -26,7 +26,7 @@
     <br>
     <br>
     <p class="font">アカウントをお持ちでない方はこちら</p>
-    <p><button type="submit" name="newaccount" class="bt-design2" onclick="location.href='../prottype_yamada/member/member_register.html'">新規会員登録</button></p>
+    <p><button type="submit" name="newaccount" class="bt-design2" onclick="location.href='../registration/member_register.php'">新規会員登録</button></p>
 </div>
 <div class="footer">
   <div class="content">

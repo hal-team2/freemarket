@@ -5,15 +5,15 @@
 	<title>商品登録画面</title>
 	<meta name="description" content="サイトキャプションを入力">
 	<meta name="keywords" content="サイトキーワードを,で区切って入力">
-	<link rel="stylesheet" href="../yonesho/css/flame.css">
-	<link rel="stylesheet" href="../template-css/contoroller.css">
-	<link rel="stylesheet" href="./css/main.css">
-	<link rel="stylesheet" href="./css/item_reg.css">
+	<link rel="stylesheet" href="../../public/css/flame.css">
+	<link rel="stylesheet" href="../../public/css/contoroller.css">
+	<link rel="stylesheet" href="../../public/css/main.css">
+	<link rel="stylesheet" href="../../each/css/exhibit/item_reg.css">
 </head>
 <body>
 <div id="header">
   <ul>
-    <li><img src="./img/logo_sq.png"><input type="text" placeholder=""></li>
+    <li><img src="../../image/site/logo_sq.png"><input type="text" placeholder=""></li>
   </ul>
 </div>
 <div class="main">
@@ -77,7 +77,7 @@
 <br>
 <p><button type="submit" name="regist" class="bt-design">出品する</button></p>
 <br>
-<p><button type="submit" name="top" class="bt-design2" onclick="location.href='../yonesho/index.html'">TOPへ戻る</button></p>
+<p><button type="submit" name="top" class="bt-design2" onclick="location.href='../index.php'">TOPへ戻る</button></p>
 <br>
 <br>
 </div>
@@ -91,10 +91,10 @@
 </div>
 <div id="controller">
   <ul>
-    <li><a href="#"><img src="../yonesho/img/iOS%20%E3%81%AE%E7%94%BB%E5%83%8F.png"></a></li>
-    <li><a href="#"><img src="../yonesho/img/favorite-24px.svg"></a></li>
-    <li><a href="#"><img src="../yonesho/img/chat-24px.svg"></a></li>
-    <li><a href="#"><img src="../yonesho/img/account_circle-24px.svg"></a></li>
+    <li><a href="#"><img src="../../image/site/logo_sq.png"></a></li>
+    <li><a href="#"><img src="../../image/icon/favorite-24px.svg"></a></li>
+    <li><a href="#"><img src="../../image/icon/chat-24px.svg"></a></li>
+    <li><a href="#"><img src="../../image/icon/account_circle-24px.svg"></a></li>
   </ul>
 </div>
 </body>
