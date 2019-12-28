@@ -49,7 +49,7 @@
   <br>
   <p class="sub">商品状態<span class="required">必須</span></p>
   <p class="box">
-    <select name="category">
+    <select name="condition">
     <option value="">商品状態を選択</option>
     <option value="0">新品・未使用</option>
     <option value="1">未使用に近い</option>
@@ -62,7 +62,7 @@
   <br>
   <p class="sub">発送日の目安<span class="required">必須</span></p>
   <p class="box">
-    <select name="category">
+    <select name="decide_date">
     <option value="">発送までの日数を選択</option>
     <option value="0">１～２日</option>
     <option value="1">２～３日</option>
@@ -73,6 +73,10 @@
   <p class="pricebox">￥<input type ="text" name="price" placeholder="価格入力"></p>
   <p class="sub">販売価格<span class="required">必須</span></p>
 <br>
+  <p class="sub">商品優先登録</p>
+  <p class="box">
+  <p><input type="radio" name="priority" value="yes">登録する</p>
+  <p><input type="radio" name="priority" value="no" checked>登録しない</p>  
 <br>
 <br>
 <p><button type="submit" name="regist" class="bt-design">出品する</button></p>
