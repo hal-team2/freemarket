@@ -22,6 +22,7 @@
   <br>
   <hr>
   <br>
+  <form action="" method="POST" enctype="multipart/form-data">
   <p class="sub">商品画像<span class="required">必須</span></p>
   <p><input type="file" name="pic"></p>
   <br>
@@ -75,11 +76,12 @@
 <br>
   <p class="sub">商品優先登録</p>
   <p class="box">
-  <p><input type="radio" name="priority" value="yes">登録する</p>
-  <p><input type="radio" name="priority" value="no" checked>登録しない</p>  
+  <p><input type="radio" name="priority" value="1">登録する</p>
+  <p><input type="radio" name="priority" value="0" checked>登録しない</p>  
 <br>
 <br>
 <p><button type="submit" name="regist" class="bt-design">出品する</button></p>
+</form>
 <br>
 <p><button type="submit" name="top" class="bt-design2" onclick="location.href='../index.php'">TOPへ戻る</button></p>
 <br>

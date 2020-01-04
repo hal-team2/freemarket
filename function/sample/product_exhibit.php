@@ -9,11 +9,9 @@
 /*--------------------------------------*/
 
 
-/*---関数説明　[product_exhibit(商品名,商品説明,カテゴリ,状態,発送日時,価格,優先度)]
+/*---関数説明　[product_exhibit(商品画像,商品名,商品説明,カテゴリ,状態,発送日時,価格,優先度)]
 商品出品画面で各フォームに入力した項目をデータベースに書き込む
-書き込み先テーブル⇒products,product_price,product_priority,decide_send_date
-
-※画像アップロードの関数化はまだ※
+書き込み先テーブル⇒products,product_price,product_priority,product_img,decide_send_date,
 
 ----------------------------------------------------------------------------*/
 
@@ -30,13 +28,10 @@ date_default_timezone_set('Asia/Tokyo');
 
 
 /*---------主処理----------*/
-function product_exhibit($product_name,$product_summary,$product_category,$product_condition,$product_decide,$product_price,$priority){
+function product_exhibit($product_image,$product_name,$product_summary,$product_category,$product_condition,$product_decide,$product_price,$priority){
     $product_name = $_POST["product_name"];
     $summary = $_POST["summary"];
     $category_id = $_POST["category"];
-    //send_decide_date date⇒varchar
-    //products category_id int⇒varchar
-    //img_id 10⇒20
 
     //コンディション
     if($_POST["condition"] == 0){
@@ -78,7 +73,8 @@ function product_exhibit($product_name,$product_summary,$product_category,$produ
 
     //新レコードのID決め
     $id_new = $id_max + 1;
-    $new_record = sprintf('%05d',$id_new);
+        //連番の0埋め
+        $new_record = sprintf('%05d',$id_new);
     $id_year = date("y");
     if($_POST["priority"] == "yes"){
         $id_priority = 1;
@@ -87,13 +83,13 @@ function product_exhibit($product_name,$product_summary,$product_category,$produ
     }
     $product_id = "$category_id"."$id_year"."$id_priority"."$new_record";
 
-    //画像処理
-    /*$product_img = $product_id."."."jpg";
+    //画像処理 
+    $product_img = $product_id."."."jpg";
     if(isset($_FILES['pic'])){
         $upload_file = $_FILES["pic"];
         move_uploaded_file($upload_file['tmp_name'],UPLOAD_PATH.$product_img);
     }
-    */
+    
     
 
     //書き込み
@@ -105,8 +101,8 @@ function product_exhibit($product_name,$product_summary,$product_category,$produ
     mysqli_query($cn,$sql_decide);
     $sql_priority = "INSERT INTO product_priority(product_id,priority)VALUES('$product_id','$id_priority');";
     mysqli_query($cn,$sql_priority);
-    //$sql_img = "INSERT INTO product_img(product_id,img_id)VALUES('$product_id','$product_img');";
-    //mysqli_query($cn,$sql_img);
+    $sql_img = "INSERT INTO product_img(product_id,img_id)VALUES('$product_id','$product_img');";
+    mysqli_query($cn,$sql_img);
 
     mysqli_close($cn);
 }
@@ -114,7 +110,7 @@ function product_exhibit($product_name,$product_summary,$product_category,$produ
 
 //使用例
 //if(isset($_POST["product_name"]) && isset($_POST["summary"]) && isset($_POST["category"]) && isset($_POST["condition"]) && isset($_POST["decide_date"]) && isset($_POST["price"]) && isset($_POST["priority"])){
-//    product_exhibit($_POST["product_name"],$_POST["summary"],$_POST["category"],$_POST["condition"],$_POST["decide_date"],$_POST["price"],$_POST["priority"]);
+//    product_exhibit($_FILES["pic"],$_POST["product_name"],$_POST["summary"],$_POST["category"],$_POST["condition"],$_POST["decide_date"],$_POST["price"],$_POST["priority"]);
 //}
 
 
