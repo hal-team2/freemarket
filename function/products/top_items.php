@@ -1,6 +1,6 @@
 <?php
 /*---------------------------------------
-/* pg_name: search_function
+/* pg_name: top_items
 /*---------------------------------------
 /* IH12A905 team2:
 /*---------------------------------------
@@ -14,35 +14,39 @@
 // const DB_USER = 'root';
 // const DB_PASS = '';
 
-
 /*---------主処理----------*/
 
 /*
-カテゴリ検索して検索結果の商品idと商品画像を返す関数
-引数：カテゴリー名(string)
+トップページの商品画像と商品idを取得する関数
+引数：なし
 戻り値：連想配列
-'id' => 商品ID
-'img' => 商品画像
+'id'=>商品ID
+'img_id'=>画像ID
+
 */
 
-function search_category($category){
+
+function top_items(){
+
 	$list = [];
-	$sql = "SELECT id,img_id FROM products INNER JOIN product_img ON products.id = product_img.product_id WHERE category_id ='".$category."' ORDER BY RIGHT(id,5) DESC;";
 
 /*--------------データベース接続-------------------------*/
 	$cn = mysqli_connect(HOST,DB_USER,DB_PASS,DB_NAME);
 	mysqli_set_charset($cn,"utf8");
+
+	$sql = "SELECT product_id,img_id FROM product_img ORDER BY RIGHT(product_id,5) DESC;";
 	$result = mysqli_query($cn,$sql);
 	mysqli_close($cn);
 
 	while($row = mysqli_fetch_assoc($result)){
 		$product = [
-			'id' => $row['id'],
+			'id' => $row['product_id'],
 			'img' => $row['img_id']
 		];
 		$list[] = $product;
 	}
 	return $list;
 }
+
 
 ?>
