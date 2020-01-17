@@ -22,11 +22,13 @@
 キーワード検索して検索結果の商品idを配列で返す関数
 引数：会員ID,入力キーワード(string)
 戻り値：連想配列
+'id' => 商品ID
+'img' => 商品画像
 */
 function search_products($member_id,$keyword){
 
 	$list = [];
-	$sql = "SELECT id FROM products WHERE product_name LIKE'%".$keyword."%' ORDER BY RIGHT(id,5) DESC;";
+	$sql = "SELECT id,img_id FROM products INNER JOIN product_img ON products.id = product_img.product_id WHERE product_name LIKE'%".$keyword."%' ORDER BY RIGHT(id,5) DESC;";
 
 /*--------------データベース接続-------------------------*/
 	$cn = mysqli_connect(HOST,DB_USER,DB_PASS,DB_NAME);
@@ -41,12 +43,12 @@ function search_products($member_id,$keyword){
 
 	while($row = mysqli_fetch_assoc($result)){
 		$product = [
-			'id' => $row['id']
+			'id' => $row['id'],
+			'img' => $row['img_id']
 		];
 		$list[] = $product;
 	}
 	return $list;
 }
-
 
 ?>
