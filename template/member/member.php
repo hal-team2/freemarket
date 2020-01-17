@@ -1,52 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>
-        会員ページ
-    </title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-    <link rel="stylesheet" href="./css/member.css">
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="サイトキャプションを入力">
+  <meta name="keywords" content="サイトキーワードを,で区切って入力">
+  <link rel="stylesheet" href="public/css/flame.css">
+  <link rel="stylesheet" href="public/css/contoroller.css">
+  <link rel="stylesheet" href="each/css/index.css">
+  <link rel="stylesheet" href="each/css/search/search.css">
+  <link rel="stylesheet" href="each/css/member/member.css">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+  <script src="public/js/jquery-3.4.1.min.js"></script>
+  <script src="public/js/masonry.pkgd.min.js"></script>
+  <script src="each/js/index.js"></script>
 </head>
-<body>
-<div id="wrap">
-<div id="header">
-    <p><a href=""><img src="img/logo_sq.png"></a></p>
-</div>   
-    <div class="main">
-        <h2>登録情報</h2>
-        <h3>会員名</h3> 
-            <p>〇田〇郎</p>
-        <h3 class="line">評価</h3>
-        <p>誠実さ・態度:<span class="eval">★★★</span>　円滑さ:<span class="eval">★★</span></p>
-        <h3 class="line">所持ポイント</h3>
-        <p>0000P</p>
-        <h3 class="line">性別</h3>
-            <p><span class="gender_male">男</span></p> 
-        <h3 class="line">生年月日</h3>
-            <p>〇〇〇〇/□□/△△</p>      
-        <h3 class="line">住所</h3>
-            <p>国:日本</p>
-            <p>〇〇県〇〇市〇〇〇〇〇〇〇〇</p>
-        <h3 class="line">メールアドレス</h3>
-            <p>xxxxxxxxxxxxxx@yyyyy.com</p>
-            <p>[編集]</p>     
-        <h3 class="line">電話番号</h3>
-            <p>000-0000-0000</p> 
-            <p>[編集]</p>   
-        <h3 class="line">支払情報</h3>  
-            <p>下4桁　〇〇〇〇</p>
-        <h2 class="hist">取引履歴</h2>
-            <p><a href="">取引完了日時,商品名①</a></p>
-            <p><a href="">取引完了日時,商品名②</a></p>
-            <p><a href="">取引完了日時,商品名③</a></p>
-            <p><a href="">取引完了日時,商品名④</a></p>      
-    <hr id="cut">
-    <p class="top"><a href="../../yonesho/index.html">TOPへ戻る</a></p>        
-    </div>        
-<div class="footer">
-        <div class="copyright"><p>&copy; TRUSTme</p></div>
-</div>    
-</div>
-</body>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <ul>
+          <li><img src="image/site/logo_sq.png"><input type="text" placeholder="" class="Sinput"></li>
+<!--          <li><a href="index.php?id=1"><img src="image/icon/cavi.jpg"></a></li>-->
+<!--          <li><a href="../index.php?">会員登録</a><a href="">ログイン</a></li>-->
+        </ul>
+      </div>
+      <div id="search">
+        <div id="popular">
+          <h2>TREND<img src="image/icon/trending_up-24px.svg"></h2>
+          <ul>
+            <li>うんこ</li>
+            <li>ポケモン剣盾</li>
+            <li>Mk</li>
+            <li>徹夜</li>
+          </ul>
+        </div>
+        <div id="category">
+          <h2>CATEGORY<img src="image/icon/category-24px.svg"></h2>
+          <div class="categoryBox">
+            <div class="Sbox">
+              <ul>
+                <li><img src="image/icon/shoes.png"></li>
+                <li>SHOSE</li>
+              </ul>
+            </div>
+            <div class="Sbox">
+              <ul>
+                <li><img src="image/icon/toy.png"></li>
+                <li>TOY</li>
+              </ul>
+            </div>
+            <div class="Sbox">
+              <ul>
+                <li><img src="image/icon/wearing.png"></li>
+                <li>WEAR</li>
+              </ul>
+            </div>
+            <div class="Sbox">
+              <ul>
+                <li><img src="image/icon/book.png"></li>
+                <li>BOOK</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="member">
+        <ul class="account">
+          <li><img src="image/icon/cavi.jpg"></li>
+          <li>Name</li>
+        </ul>
+        <ul class="country">
+          <li><img src="image/country/UK.gif"></li>
+          <li>Country</li>
+        </ul>
+      </div>
+      <div id="contents">
+        <div class="box img"><a href=""><img src="image/products/sample1.jpg"></a></div>
+        <div class="box img"><a href=""><img src="image/products/sample2.jpg"></a></div>
+        <div class="box img"><a href=""><img src="image/products/sample3.jpg"></a></div>
+        <div class="box img"><a href=""><img src="image/products/sample4.jpg"></a></div>
+        <div class="box img"><a href=""><img src="image/products/sample5.jpg"></a></div>
+        <div class="box img"><a href=""><img src="image/products/sample6.jpg"></a></div>
+        <div class="box img"><a href=""><img src="image/products/sample7.jpg"></a></div>
+        <div class="box img"><a href=""><img src="image/products/sample8.jpg"></a></div>
+        <div class="box img"><a href=""><img src="image/products/sample9.jpg"></a></div>
+        <div class="box img"><a href=""><img src="image/products/sample10.jpg"></a></div>
+        <div class="box img"><a href=""><img src="image/products/sample11.jpg"></a></div>
+      </div>
+      <div id="controller">
+        <ul>
+          <li><a href=""><img src="image/site/logo_sq.png"></a></li>
+          <li><a href=""><img src="image/icon/favorite-24px.svg"></a></li>
+          <li><a href=""><img src="image/icon/chat-24px.svg"></a></li>
+          <li><a href=""><img src="image/icon/account_circle-24px.svg"></a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,84 +1,78 @@
 /* CSS document */
 
-body {
-    background-color: white;
-}
-#header {
-	position: fixed;
-	z-index: 100;
-}
 
 /*======= popular =======*/
 #popular {
-	width: 800px;
-	height: auto;
-	margin: 0 auto;
+  width: 800px;
+  height: auto;
+  margin: 0 auto;
 }
 #popular h2,
 #category h2{
   font-size: 1.5em;
-	font-weight: 100;
-	margin: 50px;
-	vertical-align: middle;
-	margin-bottom: 15px;
+  font-weight: 100;
+  margin: 50px;
+  vertical-align: middle;
+  margin-bottom: 15px;
 }
 #popular h2{
-	margin-top: 150px;
+  margin-top: 50px;
 }
 #popular img{
-	height: 35px;
-	vertical-align: middle;
+  height: 35px;
+  vertical-align: middle;
 }
 #popular ul{
-	display: flex;
+  display: flex;
 }
 #popular li{
-	width: 150px;
-	height: 60px;
-	background-color: gainsboro;
-	text-align: center;
-	line-height: 60px;
-	font-size: 1.2em;
-	border-radius: 30px;
-	margin-left: 30px;
+  width: 150px;
+  height: 60px;
+  background-color: gainsboro;
+  text-align: center;
+  line-height: 60px;
+  font-size: 1.2em;
+  border-radius: 30px;
+  margin-left: 30px;
 }
 
 /*======= category =======*/
 #category {
-	width: 800px;
-	margin: 0 auto;
-	margin-top: 50px;
-	height: auto;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  height: auto;
 }
 #category h2 > img{
-	height: 30px;
-	vertical-align: middle;
+  height: 30px;
+  vertical-align: middle;
 }
 #category h2{
-	margin-top: 100px;
+  margin-top: 50px;
 }
 
 /*------- categoryBox ------*/
 .categoryBox {
-	display: grid;
+  display: grid;
   grid-template-columns: 200px 200px 200px 200px;
 }
 
 /*------- box -------*/
-.box {
-	border-radius: 20px;
-	margin: 10px;
-	height: 220px;
-	width: 180px;
-	background-color: white;
-	border: solid  #38429D 2px;
+.Sbox {
+  border-radius: 20px;
+  margin: 10px;
+  height: 220px;
+  width: 180px;
+  background-color: white;
+  border: solid  #38429D 2px;
 }
-.box img{
-	width: 100px;
-	margin-left: 40px;
-	margin-top: 30px;
+.Sbox img{
+  width: 100px;
+  margin-left: 40px;
+  margin-top: 30px;
 }
-.box li:nth-child(2){
+.Sbox li:nth-child(2){
 	font-size: 1.5em;
 	text-align: center;
 }
