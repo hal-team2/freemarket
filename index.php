@@ -9,4 +9,10 @@
 
 /*---------主処理----------*/
 
+if(isset($_GET['id']) == true){
+  require 'template/member/member.php';
+  exit;
+}
+require 'template/index.php';
+exit;
 ?>
