@@ -21,6 +21,7 @@ $(window).on('load resize',function(){
 $(function(){
   var mw = $(window).width();
   var boxWidth;
+  var searchCnt = 0;
   
   if(mw > 1500){
     boxWidth = (mw - 120) / 6;
@@ -42,5 +43,20 @@ $(function(){
     columnWidth: boxWidth,
     gutter: 40
   })
+  
+  
+  //search出現
+  $('.Sinput').click(function(){
+    searchCnt++;
+    if(searchCnt % 2 == 1){
+      $('#search').slideDown(200);
+    }
+    else {
+      $('#search').slideUp(200);
+    }
+  });
+  $('#search').click(function(){
+    $(this).slideUp(200);
+  });
 });
 
