@@ -23,7 +23,7 @@
       <div id="header">
         <ul>
           <li><img src="image/site/logo_sq.png"><input type="text" placeholder="" class="Sinput"></li>
-<!--          <li><a href="index.php?id=1"><img src="image/icon/cavi.jpg"></a></li>-->
+          <li><a href="index.php?back=1"><img src="image/icon/backspace-24px.svg"></a></li>
 <!--          <li><a href="../index.php?">会員登録</a><a href="">ログイン</a></li>-->
         </ul>
       </div>
