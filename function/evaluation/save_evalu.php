@@ -1,6 +1,6 @@
 <?php
 /*---------------------------------------
-/* pg_name: evaluation
+/* pg_name: save_evalu
 /*---------------------------------------
 /* IH12A905 team2:
 /*---------------------------------------
@@ -23,7 +23,7 @@
 */
 
 
-function evaluation($member_id,$evalu_attitude,$evalu_smoothness){
+function save_evalu($member_id,$evalu_attitude,$evalu_smoothness){
 
 	$point = array("good" => 0,"well" => 0,"bad" => 0);
 
