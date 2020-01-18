@@ -68,14 +68,23 @@
         </div>
       </div>
       <div id="member">
-        <ul class="account">
-          <li><img src="image/icon/cavi.jpg"></li>
-          <li>Name</li>
-        </ul>
-        <ul class="country">
-          <li><img src="image/country/UK.gif"></li>
-          <li>Country</li>
-        </ul>
+        <div class="memberIn">
+          <ul class="account">
+            <li><img src="image/icon/cavi.jpg"></li>
+            <li>Name</li>
+          </ul>
+          <ul class="country">
+            <li><img src="image/country/UK.gif"></li>
+            <li>Country</li>
+          </ul>
+        </div>
+        <p>profile</p>
+        <div class="memberIn_2">
+          <ul>
+            <li><a>5</a><a>500</a></li>
+            <li>★★★☆☆</li>
+          </ul>
+        </div>
       </div>
       <div id="contents">
         <div class="box img"><a href=""><img src="image/products/sample1.jpg"></a></div>
