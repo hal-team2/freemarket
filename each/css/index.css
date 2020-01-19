@@ -69,20 +69,10 @@
 
 /*------- box -------*/
 .box {
-/*  border-radius: 20px;*/
-/*  border-bottom-left-radius: 50px;*/
   margin-bottom: 40px;
-/*  border: solid black 5px;*/
-/*  overflow: hidden;*/
 }
 .box::before{
-  /* width: 200px; */
-  /* height: 200px; */
-  /* content: ""; */
-  /* display: block; */
-  /* position: relative; */
-  /* top: 0; */
-  /* left: 0; */
+ 
 }
 
 .box img{
@@ -90,11 +80,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,1.5%);
-  border-radius: 20px;
-/*  border-bottom-left-radius: 0px;*/
-/*  border-bottom-right-radius: 0px;*/
-/*  border-top-left-radius: 10px;*/
-/*  border-top-right-radius: 10px;*/
 }
 
 .box a{
