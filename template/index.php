@@ -7,6 +7,8 @@
   <meta name="keywords" content="サイトキーワードを,で区切って入力">
   <link rel="stylesheet" href="public/css/flame.css">
   <link rel="stylesheet" href="public/css/contoroller.css">
+  <link rel="stylesheet" href="public/css/slick.css">
+  <link rel="stylesheet" href="public/css/slick-theme.css">
   <link rel="stylesheet" href="each/css/index.css">
   <link rel="stylesheet" href="each/css/search/search.css">
   <!--[if lt IE 9]>
@@ -15,6 +17,7 @@
   <![endif]-->
   <script src="public/js/jquery-3.4.1.min.js"></script>
   <script src="public/js/masonry.pkgd.min.js"></script>
+  <script src="public/js/slick.min.js"></script>
   <script src="each/js/index.js"></script>
 </head>
   <body>
@@ -67,7 +70,10 @@
         </div>
       </div>
       <div id="banner">
-        <p><img src="image/site/outdoor.jpg"></p>
+        <ul class="Bimg">
+          <li><img src="image/site/outdoor.jpg"></li>
+          <li><img src="image/site/it.jpg"></li>
+        </ul>
       </div>
       <div id="favoriteName">
         <ul>
@@ -80,17 +86,17 @@
         </ul>
       </div>
       <div id="contents">
-        <div class="box img"><a href=""><img src="image/products/sample1.jpg"></a></div>
-        <div class="box img"><a href=""><img src="image/products/sample2.jpg"></a></div>
-        <div class="box img"><a href=""><img src="image/products/sample3.jpg"></a></div>
-        <div class="box img"><a href=""><img src="image/products/sample4.jpg"></a></div>
-        <div class="box img"><a href=""><img src="image/products/sample5.jpg"></a></div>
-        <div class="box img"><a href=""><img src="image/products/sample6.jpg"></a></div>
-        <div class="box img"><a href=""><img src="image/products/sample7.jpg"></a></div>
-        <div class="box img"><a href=""><img src="image/products/sample8.jpg"></a></div>
-        <div class="box img"><a href=""><img src="image/products/sample9.jpg"></a></div>
-        <div class="box img"><a href=""><img src="image/products/sample10.jpg"></a></div>
-        <div class="box img"><a href=""><img src="image/products/sample11.jpg"></a></div>
+        <div class="box img1"><a href="" class="Fbutton1">+</a><img src="image/products/sample1.jpg"></div>
+        <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample2.jpg"></div>
+        <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample3.jpg"></div>
+        <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample4.jpg"></div>
+        <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample5.jpg"></div>
+        <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample6.jpg"></div>
+        <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample7.jpg"></div>
+        <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample8.jpg"></div>
+        <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample9.jpg"></div>
+        <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample10.jpg"></div>
+        <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample11.jpg"></div>
       </div>
       <div id="controller">
         <ul>
