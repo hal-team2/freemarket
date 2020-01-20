@@ -35,7 +35,7 @@ DBから商品ID、商品名、概要、カテゴリ、商品状態、出品者I
 
 function item_info($id){
 
-	$list = [];
+	$product = [];
 
 /*--------------データベース接続-------------------------*/
 	$cn = mysqli_connect(HOST,DB_USER,DB_PASS,DB_NAME);
@@ -66,19 +66,20 @@ function item_info($id){
 		$category = "書籍";
 	}
 
+	//商品状態
+	$condition = explode(",",$row['product_condition']);
+
 	$product = [
 		'id' => $row['id'],
 		'name' => $row['product_name'],
 		'summary' => $row['summary'],
 		'category' => $category,
-		'codition' => $row['product_condition'],
+		'codition' => $condition,
 		'exhibitor_id' => $row['exhibitor_id'],
 		'img' => $row['img_id']
 	];
-	$list[] = $product;
 	}
-	return $list;
+	return $product;
 }
-
 
 ?>
