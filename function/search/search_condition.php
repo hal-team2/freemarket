@@ -27,7 +27,7 @@
 */
 function search_condition($condition){
 	$list = [];
-	$sql = "SELECT id,img_id FROM products INNER JOIN product_img ON products.id = product_img.product_id WHERE product_condition ='".$condition."' ORDER BY RIGHT(id,5) DESC;";
+	$sql = "SELECT id,img_id FROM products INNER JOIN product_img ON products.id = product_img.product_id WHERE product_condition LIKE %'".$condition."'% ORDER BY RIGHT(id,5) DESC;";
 
 /*--------------データベース接続-------------------------*/
 	$cn = mysqli_connect(HOST,DB_USER,DB_PASS,DB_NAME);
