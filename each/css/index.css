@@ -1,13 +1,6 @@
 /* CSS document */
 
 /*======= header =======*/
-#header {
-  position: fixed;
-  z-index: 200;
-}
-#header .Sinput{
-  width: 600px;
-}
 
 /*======= banner =======*/
 

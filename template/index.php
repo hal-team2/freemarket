@@ -86,7 +86,7 @@
         </ul>
       </div>
       <div id="contents">
-        <div class="box img1"><a href="" class="Fbutton1">+</a><img src="image/products/sample1.jpg"></div>
+        <div class="box img1"><a href="index.php?favList=1" class="Fbutton1">+</a><img src="image/products/sample1.jpg"></div>
         <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample2.jpg"></div>
         <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample3.jpg"></div>
         <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample4.jpg"></div>
