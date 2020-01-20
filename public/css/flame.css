@@ -35,6 +35,15 @@ input {
   margin-bottom: 15px;
   line-height: 60px;
 }
+
+#header {
+  position: fixed;
+  z-index: 200;
+}
+#header .Sinput{
+  width: 600px;
+}
+
 #header input{
   background-color: white;
   background-image: url(../../image/icon/baseline_search_black_24dp.png);
@@ -44,8 +53,7 @@ input {
   height: 50px;
 }
 #header li:nth-child(2){
-    margin-right: 40px;
-/*    width: 200px;*/
+  margin-right: 40px;
 }
 #header ul{
   display: flex;

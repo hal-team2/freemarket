@@ -13,10 +13,17 @@ if(isset($_GET['id']) == true){
   require 'template/member/member.php';
   exit;
 }
-else if(isset($_GET['back']) == true){
+
+if(isset($_GET['back']) == true){
   require 'template/index.php';
   exit;
 }
+
+if(isset($_GET['favList']) == true){
+  require 'template/search/fav_list.php';
+  exit;
+}
+
 require 'template/index.php';
 exit;
 ?>
