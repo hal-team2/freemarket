@@ -9,7 +9,7 @@
 /*--------------------------------------*/
 
 
-/*---関数説明　[product_exhibit(商品画像,商品名,商品説明,カテゴリ,状態,発送日時,価格,優先度)]
+/*---関数説明　[product_exhibit(商品画像,商品名,商品説明,カテゴリ,状態,発送日時,価格,優先度,出品者ID)]
 商品出品画面で各フォームに入力した項目をデータベースに書き込む
 書き込み先テーブル⇒products,product_price,product_priority,product_img,decide_send_date,
 
@@ -28,35 +28,26 @@ date_default_timezone_set('Asia/Tokyo');
 
 
 /*---------主処理----------*/
-function product_exhibit($product_image,$product_name,$product_summary,$product_category,$product_condition,$product_decide,$product_price,$priority){
-    $product_name = $_POST["product_name"];
-    $summary = $_POST["summary"];
-    $category_id = $_POST["category"];
+function product_exhibit($upload_file,$product_name,$product_summary,$product_category,$product_condition,$product_decide,$product_price,$priority,$exhibitor_id){
 
-    //コンディション
-    if($_POST["condition"] == 0){
-        $product_condition = "新品・未使用";
-    }elseif($_POST["condition"] == 1){
-        $product_condition = "未使用に近い";
-    }elseif($_POST["condition"] == 2){
-        $product_condition = "目立った傷や汚れなし";
-    }elseif($_POST["condition"] == 3){
-        $product_condition = "やや傷や汚れあり";
-    }elseif($_POST["condition"] == 4){
-        $product_condition = "傷や汚れあり";
-    }elseif($_POST["condition"] == 5){
-        $product_condition = "全体的に状態が悪い";
+
+    if(isset($product_summary) && is_array($product_summary)){
+        $summary = implode(",", $product_summary);
     }
 
-    $exhibitor_id = "ZANTEI";
-    $price = $_POST["price"];
+
+    //商品状態（配列でうけとったのを文字列に）
+    if(isset($product_condition) && is_array($product_condition)){
+        $condition = implode(",", $product_condition);
+    }
+
 
     //発送日時
-    if($_POST["decide_date"] == 0){
+    if($product_decide == 0){
         $decide_date = "1～2日";
-    }elseif($_POST["decide_date"] == 1){
+    }elseif($product_decide == 1){
         $decide_date = "3～4日";
-    }elseif($_POST["decide_date"] == 2){
+    }elseif($product_decide == 2){
         $decide_date = "4～7日";
     }
 
@@ -76,32 +67,30 @@ function product_exhibit($product_image,$product_name,$product_summary,$product_
         //連番の0埋め
         $new_record = sprintf('%05d',$id_new);
     $id_year = date("y");
-    if($_POST["priority"] == "yes"){
+    if($priority == "yes"){
         $id_priority = 1;
     }else{
         $id_priority = 0;
     }
-    $product_id = "$category_id"."$id_year"."$id_priority"."$new_record";
+    $product_id = "$product_category"."$id_year"."$id_priority"."$new_record";
 
     //画像処理 
     $product_img = $product_id."."."jpg";
-    if(isset($_FILES['pic'])){
-        $upload_file = $_FILES["pic"];
+    if(isset($upload_file)){
         move_uploaded_file($upload_file['tmp_name'],UPLOAD_PATH.$product_img);
     }
-    
-    
+
 
     //書き込み
-    $sql_products = "INSERT INTO products(id,product_name,summary,category_id,product_condition,exhibitor_id)VALUES('$product_id','$product_name','$summary','$category_id','$product_condition','$exhibitor_id');";
+    $sql_products = "INSERT INTO products(id,product_name,summary,category_id,product_condition,exhibitor_id)VALUES('".$product_id."','".$product_name."','".$summary."','".$product_category."','".$condition."','".$exhibitor_id."');";
     mysqli_query($cn,$sql_products);
-    $sql_price = "INSERT INTO product_price(product_id,price)VALUES('$product_id','$price');";
+    $sql_price = "INSERT INTO product_price(product_id,price)VALUES('".$product_id."','".$product_price."');";
     mysqli_query($cn,$sql_price);
-    $sql_decide = "INSERT INTO decide_send_date(product_id,decide_date)VALUES('$product_id','$decide_date');"; 
+    $sql_decide = "INSERT INTO decide_send_date(product_id,decide_date)VALUES('".$product_id."','".$decide_date."');"; 
     mysqli_query($cn,$sql_decide);
-    $sql_priority = "INSERT INTO product_priority(product_id,priority)VALUES('$product_id','$id_priority');";
+    $sql_priority = "INSERT INTO product_priority(product_id,priority)VALUES('".$product_id."','".$id_priority."');";
     mysqli_query($cn,$sql_priority);
-    $sql_img = "INSERT INTO product_img(product_id,img_id)VALUES('$product_id','$product_img');";
+    $sql_img = "INSERT INTO product_img(product_id,img_id)VALUES('".$product_id."','".$product_img."');";
     mysqli_query($cn,$sql_img);
 
     mysqli_close($cn);
