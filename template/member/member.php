@@ -16,7 +16,7 @@
   <![endif]-->
   <script src="public/js/jquery-3.4.1.min.js"></script>
   <script src="public/js/masonry.pkgd.min.js"></script>
-  <script src="each/js/index.js"></script>
+  <script src="each/js/member/member.js"></script>
 </head>
   <body>
     <div id="wrapper">
