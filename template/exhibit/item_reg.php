@@ -31,7 +31,7 @@
   <p class="box"><input type="text" name="name" class="textbox" placeholder="商品名(最大40字)"></p>
   <br>
   <p class="sub">商品説明<span class="required">必須</span></p>
-  <p class="box"><textarea name="content" placeholder="商品説明(最大1000字)"></textarea></p>
+  <p class="box"><textarea name="summary" placeholder="商品説明(最大1000字)"></textarea></p>
   <br>
   <p class="sub">商品状態<span class="required">必須</span></p>
   <p class="box">
