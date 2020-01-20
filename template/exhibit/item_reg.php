@@ -24,7 +24,7 @@
   <br>
   <form action="" method="POST" enctype="multipart/form-data">
   <p class="sub">商品画像<span class="required">必須</span></p>
-  <p><input type="file" name="pic"></p>
+  <p><input type="file" name="pic" multiple="multiple" accept="image/*"></p>
   <br>
   <br>
   <p class="sub">商品名<span class="required">必須</span></p>
@@ -32,6 +32,19 @@
   <br>
   <p class="sub">商品説明<span class="required">必須</span></p>
   <p class="box"><textarea name="content" placeholder="商品説明(最大1000字)"></textarea></p>
+  <br>
+  <p class="sub">商品状態<span class="required">必須</span></p>
+  <p class="box">
+    <input type="checkbox" name="condition" value="0">新品未使用
+    <input type="checkbox" name="condition" value="1">未使用に近い
+    <input type="checkbox" name="condition" value="2">目立った傷や汚れなし
+    <input type="checkbox" name="condition" value="3">傷あり
+    <input type="checkbox" name="condition" value="4">汚れあり
+    <input type="checkbox" name="condition" value="5">日焼けあり
+    <input type="checkbox" name="condition" value="6">欠品
+    <input type="checkbox" name="condition" value="7">破損品
+    <input type="checkbox" name="condition" value="8">箱なし
+  </p>
   <br>
   <p class="sub">カテゴリ<span class="required">必須</span></p>
   <p class="box">
@@ -45,19 +58,6 @@
     <option value="M">家電・オーディオ・モバイルグッズ</option>
     <option value="C">コスメ・スキンケア</option>
     <option value="P">書籍</option>
-    </select>
-  </p>
-  <br>
-  <p class="sub">商品状態<span class="required">必須</span></p>
-  <p class="box">
-    <select name="condition">
-    <option value="">商品状態を選択</option>
-    <option value="0">新品・未使用</option>
-    <option value="1">未使用に近い</option>
-    <option value="2">目立った傷や汚れなし</option>
-    <option value="3">やや傷や汚れあり</option>
-    <option value="4">傷や汚れあり</option>
-    <option value="5">全体的に状態が悪い</option>
     </select>
   </p>
   <br>
