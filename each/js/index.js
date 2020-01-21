@@ -61,16 +61,19 @@ $(function(){
     searchCnt++;
     if(searchCnt % 2 == 1){
       $('#search').slideDown(200);
+      $('.Scontents').slick('setPosition');
+      $('.sujestIn_1').slick('setPosition');
     }
     else {
       $('#search').slideUp(200);
     }
   });
   
-  $('#search').click(function(){
-    $(this).slideUp(200);
-    searchCnt--;
-  });
+  
+//  $('#search').click(function(){
+//    $(this).slideUp(200);
+//    searchCnt--;
+//  });
   
   $(window).scroll(function(){
     var scrollValue = $(this).scrollTop();

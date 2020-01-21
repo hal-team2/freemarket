@@ -19,6 +19,7 @@
   <script src="public/js/masonry.pkgd.min.js"></script>
   <script src="public/js/slick.min.js"></script>
   <script src="each/js/index.js"></script>
+  <script src="each/js/search/search.js"></script>
 </head>
   <body>
     <div id="wrapper">
@@ -71,15 +72,30 @@
           </div>
         </div>
 -->
-        <ul>
-          <li>あすすめ<img src="image/icon/category-24px.svg"></li>
-          <li>トレンド<img src="image/icon/category-24px.svg"></li>
-          <li>カテゴリー<img src="image/icon/category-24px.svg"></li>
-        </ul>
         <div class="Scontents">
-          <div class="sujest"></div>
-          <div class="trend"></div>
-          <div class="category"></div>
+          <div class="sujest Scontent">
+            <ul class="sujestIn_1">
+              <li><img src="image/site/outdoor.jpg"></li>
+              <li><img src="image/site/it.jpg"></li>
+            </ul>
+            <ul class="sujestIn_2">
+              <li><img src="image/site/snowpeak.jpg"></li>
+              <li><img src="image/site/danner.jpg"></li>
+            </ul>
+            <button>View More</button>
+          </div>
+          <div class="trend Scontent">
+            <h2>TREND</h2>
+            <ul>
+              <li><span class="rank">1.TREND</span><span class="title">シューズ</span></li>
+              <li><span class="rank">2.TREND</span><span class="title">shoes</span></li>
+              <li><span class="rank">3.TREND</span><span class="title">zapatos</span></li>
+              <li><span class="rank">4.TREND</span><span class="title">靴</span></li>
+              <li><span class="rank">5.TREND</span><span class="title">신발</span></li>
+              <li><span class="rank">6.TREND</span><span class="title">chaussures</span></li>
+            </ul>
+          </div>
+          <div class="category Scontent"></div>
         </div>
       </div>
       <div id="banner">
@@ -99,17 +115,7 @@
         </ul>
       </div>
       <div id="contents">
-        <div class="box img1"><a href="index.php?favList=1" class="Fbutton1">+</a><img src="image/products/sample1.jpg"></div>
-        <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample2.jpg"></div>
-        <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample3.jpg"></div>
-        <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample4.jpg"></div>
-        <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample5.jpg"></div>
-        <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample6.jpg"></div>
-        <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample7.jpg"></div>
-        <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample8.jpg"></div>
-        <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample9.jpg"></div>
-        <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample10.jpg"></div>
-        <div class="box img"><a href="" class="Fbutton">+</a><img src="image/products/sample11.jpg"></div>
+        <div class="box img1"><a href="index.php?favList=1" class="Fbutton1">+</a><img src="image/products/F20000024.jpg"></div>
       </div>
       <div id="controller">
         <ul>
