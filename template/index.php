@@ -16,6 +16,7 @@
   <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
   <![endif]-->
   <script src="public/js/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
   <script src="public/js/masonry.pkgd.min.js"></script>
   <script src="public/js/slick.min.js"></script>
   <script src="each/js/index.js"></script>
@@ -115,7 +116,10 @@
         </ul>
       </div>
       <div id="contents">
-        <div class="box img1"><a href="index.php?favList=1" class="Fbutton1">+</a><img src="image/products/F20000024.jpg"></div>
+<!--        <div class="box img1"><a href="index.php?favList=1" class="Fbutton1">+</a><img src="image/products/F20000024.jpg"></div>-->
+        <?php for($index = 0; $index < count($top_list); $index++){ ?>
+        <div class="box img<?php echo $index ?>"><a href="index.php?favList=<?php echo $top_list[$index]['id'] ?>" class="Fbutton<?php echo $index ?>">+</a><img src="image/products/<?php echo $top_list[$index]['img'] ?>"></div>
+        <?php } ?>
       </div>
       <div id="controller">
         <ul>

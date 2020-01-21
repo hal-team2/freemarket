@@ -46,14 +46,17 @@ $(function(){
   $('.box img').css('width',boxWidth);
   $('.box').css('width',boxWidth);
   
-  var $works_list = $('#contents');
-  $works_list.masonry({
-    itemSelector: '.box',
-    isFitWidth: true,
-    columnWidth: boxWidth,
-    gutter: 40
-  })
   
+  var $grid = $('#contents').imagesLoaded( function() {
+  // 全ての画像が読み込まれてからMasonryを動作させる
+    $grid.masonry({
+      // ここにオプションを記述
+      itemSelector: '.box',
+      isFitWidth: true,
+      columnWidth: boxWidth,
+      gutter: 40
+    });
+  });
   
   //search出現
   $('.Sinput').click(function(){
@@ -76,20 +79,17 @@ $(function(){
 //  });
   
   $(window).scroll(function(){
-    var scrollValue = $(this).scrollTop();
-    var down = headerSlide(scrollValue);
+//    var scrollValue = $(this).scrollTop();
+//    var down = headerSlide(scrollValue);
     
-    var objectPosition = $('#contents').offset().top;
-    
-    if(scrollValue > objectPosition && down == true && searchCnt % 2 == 0){
-      console.log('ok');
-      $('#favoriteName').slideDown(200);
-    }
-    else {
-      $('#favoriteName').slideUp(50);
-    }
+//    var objectPosition = $('#contents').offset().top;
+//
+//    if(scrollValue > objectPosition && down == true && searchCnt % 2 == 0){
+//      console.log('ok');
+//    }
+//    else {
+//    }
   });
-  
   $('.img1').hover(
     function(){
       $('.Fbutton1').fadeIn(500);
@@ -98,25 +98,23 @@ $(function(){
       $('.Fbutton1').fadeOut(100);
     }
   );
-  
-
 });
 
 /*------- headerSlide関数 -------*/
-function headerSlide(nowValue){
-  
-  //スクロール量増減判定
-  if (nowValue > startValue) {
-    //増
-    $('#favoritName').slideUp(50);
-    var down = true;
-  } else {
-    //減
-    $('#favoritName').slideDown(500);
-    var down = false
-  }
-  startValue = nowValue;
-  
-  return down;
-}
+//function headerSlide(nowValue){
+//
+//  //スクロール量増減判定
+//  if (nowValue > startValue) {
+//    //増
+//    var down = true;
+//      $('#favoriteName').slideUp(50);
+//  } else {
+//    //減
+//    var down = false
+//      $('#favoriteName').slideDown(200);
+//  }
+//  startValue = nowValue;
+//
+//  return down;
+//}
 
