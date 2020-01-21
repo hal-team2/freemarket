@@ -27,16 +27,16 @@
       <li class="favCl">game</li>
       <li class="favCl">hot</li>
     </ul>
-    <div class="fav1 fav">
+    <div class="fav">
       <ul>
         <li><img src="image/products/sample1.jpg"></li>
         <li><img src="image/products/sample2.jpg"></li>
         <li><img src="image/products/sample6.jpg"></li>
       </ul>
     </div>
-    <div class="fav2 fav"></div>
-    <div class="fav3 fav"></div>
-    <div class="fav4 fav"></div>
+    <div class="fav"></div>
+    <div class="fav"></div>
+    <div class="fav"></div>
   </div>
   <div id="controller">
     <ul>

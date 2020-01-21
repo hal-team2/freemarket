@@ -22,6 +22,7 @@
 </head>
   <body>
     <div id="wrapper">
+      <div class="exhibit"><a href="index.php?exhibit=1">+</a></div>
       <div id="header">
         <ul>
           <li><img src="image/site/logo_sq.png"><input type="text" placeholder="" class="Sinput"></li>
@@ -30,6 +31,7 @@
         </ul>
       </div>
       <div id="search">
+<!--
         <div id="popular">
           <h2>TREND<img src="image/icon/trending_up-24px.svg"></h2>
           <ul>
@@ -68,6 +70,17 @@
             </div>
           </div>
         </div>
+-->
+        <ul>
+          <li>あすすめ<img src="image/icon/category-24px.svg"></li>
+          <li>トレンド<img src="image/icon/category-24px.svg"></li>
+          <li>カテゴリー<img src="image/icon/category-24px.svg"></li>
+        </ul>
+        <div class="Scontents">
+          <div class="sujest"></div>
+          <div class="trend"></div>
+          <div class="category"></div>
+        </div>
       </div>
       <div id="banner">
         <ul class="Bimg">
@@ -101,7 +114,7 @@
       <div id="controller">
         <ul>
           <li><a href=""><img src="image/site/logo_sq.png"></a></li>
-          <li><a href=""><img src="image/icon/favorite-24px.svg"></a></li>
+          <li><a href="index.php?favList=1"><img src="image/icon/favorite-24px.svg"></a></li>
           <li><a href=""><img src="image/icon/chat-24px.svg"></a></li>
           <li><a href=""><img src="image/icon/account_circle-24px.svg"></a></li>
         </ul>

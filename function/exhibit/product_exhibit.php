@@ -16,12 +16,12 @@
 ----------------------------------------------------------------------------*/
 
 
-// //暫定で定数化
-// const HOST = 'localhost';
-// const DB_NAME = 'sd';
-// const DB_USER = 'root';
-// const DB_PASS = '';
-// const UPLOAD_PATH = '../../image/products/';
+ //暫定で定数化
+ const HOST = 'localhost';
+ const DB_NAME = 'trustme';
+ const DB_USER = 'root';
+ const DB_PASS = '';
+ const UPLOAD_PATH = 'image/products/';
 
 //日付設定
 date_default_timezone_set('Asia/Tokyo');

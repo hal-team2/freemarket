@@ -26,13 +26,11 @@ $(function(){
   
     var favListCnt = $('.favCl').length;
   
+  $('.fav:eq(0)').fadeIn(200);
+  
   $('.favCl ').each(function(index){
     var value = 130 * index;
     var zIndex = 10 - index;
-    
-    if(!index){
-      $('.fav1').fadeIn(200);
-    }
     
     $(this).css('left', value);
     $(this).css('border-bottom', '50px solid ' + colorArray[index]);
@@ -51,8 +49,7 @@ $(function(){
   });
   
   $('.favCl').hover(function(){
-//    $(this).css('cursor','pointer');
-    $(this).css('')
+    $(this).css('cursor','pointer');
   });
 });
 
