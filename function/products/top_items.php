@@ -8,11 +8,11 @@
 /*--------------------------------------*/
 
 
-// //暫定で定数化
-// const HOST = 'localhost';
-// const DB_NAME = 'sd';
-// const DB_USER = 'root';
-// const DB_PASS = '';
+//暫定で定数化
+const HOST = 'localhost';
+const DB_NAME = 'sd';
+const DB_USER = 'root';
+const DB_PASS = '';
 
 /*---------主処理----------*/
 
@@ -34,7 +34,12 @@ function top_items(){
 	$cn = mysqli_connect(HOST,DB_USER,DB_PASS,DB_NAME);
 	mysqli_set_charset($cn,"utf8");
 
-	$sql = "SELECT product_id,img_id FROM product_img ORDER BY RIGHT(product_id,5) DESC;";
+	$sql = "SELECT COUNT(id) FROM products;";
+	$result = mysqli_query($cn,$sql);
+	$row = mysqli_fetch_assoc($result);
+	$cnt = is_null($row['COUNT(id)']) ? 0 : $row['COUNT(id)'];
+
+	$sql = "SELECT product_id,img_id FROM product_img ORDER BY RAND() LIMIT ".$cnt.";";
 	$result = mysqli_query($cn,$sql);
 	mysqli_close($cn);
 
@@ -47,6 +52,9 @@ function top_items(){
 	}
 	return $list;
 }
+
+
+var_dump(top_items());
 
 
 ?>
