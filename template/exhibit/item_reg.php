@@ -118,7 +118,7 @@
 <p><button type="submit" name="regist" class="bt-design">出品する</button></p>
 </form>
 <br>
-<p><button type="submit" name="top" class="bt-design2" onclick="location.href='../index.php'">TOPへ戻る</button></p>
+<p><button type="submit" name="top" class="bt-design2" onclick="location.href='index.php'">TOPへ戻る</button></p>
 <br>
 <br>
 </div>
