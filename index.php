@@ -42,6 +42,8 @@ if(isset($_POST['regist'])){
   product_exhibit($_FILES['pic'],$_POST['name'],$_POST['summary'],$_POST['category'],$_POST['condition'],$_POST['decide_date'],$_POST['price'],$_POST['priority'],$account_id);
 }
 
+
+
 require 'template/index.php';
 exit;
 ?>
