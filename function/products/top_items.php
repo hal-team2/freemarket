@@ -9,10 +9,10 @@
 
 
 //暫定で定数化
-const HOST = 'localhost';
-const DB_NAME = 'sd';
-const DB_USER = 'root';
-const DB_PASS = '';
+//const HOST = 'localhost';
+//const DB_NAME = 'trustme';
+//const DB_USER = 'root';
+//const DB_PASS = '';
 
 /*---------主処理----------*/
 
@@ -54,7 +54,6 @@ function top_items(){
 }
 
 
-var_dump(top_items());
 
 
 ?>

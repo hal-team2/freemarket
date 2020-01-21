@@ -8,6 +8,7 @@
 /*--------------------------------------*/
 
 require 'function/exhibit/product_exhibit.php';
+require 'function/products/top_items.php';
 
 $account_id = 1;
 /*---------主処理----------*/
@@ -42,7 +43,9 @@ if(isset($_POST['regist'])){
   product_exhibit($_FILES['pic'],$_POST['name'],$_POST['summary'],$_POST['category'],$_POST['condition'],$_POST['decide_date'],$_POST['price'],$_POST['priority'],$account_id);
 }
 
+$top_list = top_items();
 
+//var_dump($top_list);
 
 require 'template/index.php';
 exit;
