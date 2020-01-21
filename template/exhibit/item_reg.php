@@ -1,3 +1,21 @@
+<?php
+
+//わたしのデバック用　消してもいいよ
+// require_once '../../function/exhibit/product_exhibit.php';
+
+// if(isset($_POST['regist'])){
+//   product_exhibit($_FILES['pic'],$_POST['name'],$_POST['summary'],$_POST['category'],$_POST['condition'],$_POST['decide_date'],$_POST['price'],$_POST['priority'],'SAMPLE');
+// }
+
+
+
+//TODO
+//チェックボックスcssまだです
+//カテゴリをもう一段階つくる
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -16,6 +34,10 @@
     <li><img src="../../image/site/logo_sq.png"><input type="text" placeholder=""></li>
   </ul>
 </div>
+<br>
+<br>
+<br>
+<br>
 <div class="main">
   <br>
   <p class="font_b">商品登録</p>
@@ -32,28 +54,30 @@
   <br>
   <p class="sub">商品説明</p>
   <p class="box">
-    <input type="checkbox" name="summary[]" value="0">正規品
-    <input type="checkbox" name="summary[]" value="1">限定品
-    <input type="checkbox" name="summary[]" value="2">保証書付き
-    <input type="checkbox" name="summary[]" value="3">値引き可
-    <input type="checkbox" name="summary[]" value="4">即購入可
-    <input type="checkbox" name="summary[]" value="5">Sサイズ
-    <input type="checkbox" name="summary[]" value="6">Mサイズ
-    <input type="checkbox" name="summary[]" value="7">Lサイズ
-    <input type="checkbox" name="summary[]" value="8">フリーサイズ
+    <input type="hidden" name="summary[]" value="">
+    <input type="checkbox" name="summary[]" value="正規品">正規品
+    <input type="checkbox" name="summary[]" value="限定品">限定品
+    <input type="checkbox" name="summary[]" value="保証書付き">保証書付き
+    <input type="checkbox" name="summary[]" value="値引き可">値引き可
+    <input type="checkbox" name="summary[]" value="即購入可">即購入可
+    <input type="checkbox" name="summary[]" value="Sサイズ">Sサイズ
+    <input type="checkbox" name="summary[]" value="Mサイズ">Mサイズ
+    <input type="checkbox" name="summary[]" value="Lサイズ">Lサイズ
+    <input type="checkbox" name="summary[]" value="フリーサイズ">フリーサイズ
   </p>
   <br>
   <p class="sub">商品状態<span class="required">必須</span></p>
   <p class="box">
-    <input type="checkbox" name="condition[]" value="0">新品未使用
-    <input type="checkbox" name="condition[]" value="1">未使用に近い
-    <input type="checkbox" name="condition[]" value="2">目立った傷や汚れなし
-    <input type="checkbox" name="condition[]" value="3">傷あり
-    <input type="checkbox" name="condition[]" value="4">汚れあり
-    <input type="checkbox" name="condition[]" value="5">日焼けあり
-    <input type="checkbox" name="condition[]" value="6">欠品
-    <input type="checkbox" name="condition[]" value="7">破損品
-    <input type="checkbox" name="condition[]" value="8">箱なし
+    <input type="hidden" name="condition[]" value="">
+    <input type="checkbox" name="condition[]" value="新品未使用">新品未使用
+    <input type="checkbox" name="condition[]" value="未使用に近い">未使用に近い
+    <input type="checkbox" name="condition[]" value="目立った傷や汚れなし">目立った傷や汚れなし
+    <input type="checkbox" name="condition[]" value="傷あり">傷あり
+    <input type="checkbox" name="condition[]" value="汚れあり">汚れあり
+    <input type="checkbox" name="condition[]" value="日焼けあり">日焼けあり
+    <input type="checkbox" name="condition[]" value="欠品">欠品
+    <input type="checkbox" name="condition[]" value="破損品">破損品
+    <input type="checkbox" name="condition[]" value="箱なし">箱なし
   </p>
   <br>
   <p class="sub">カテゴリ<span class="required">必須</span></p>
@@ -75,9 +99,9 @@
   <p class="box">
     <select name="decide_date">
     <option value="">発送までの日数を選択</option>
-    <option value="0">１～２日</option>
-    <option value="1">２～３日</option>
-    <option value="2">４～７日</option>
+    <option value="2">１～２日</option>
+    <option value="4">３～４日</option>
+    <option value="7">４～７日</option>
     </select>
   </p>
   <br>
