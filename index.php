@@ -24,6 +24,7 @@ if(isset($_GET['id']) == true){
 
 //topページ
 if(isset($_GET['back']) == true){
+  $top_list = top_items();
   require 'template/index.php';
   exit;
 }
@@ -41,14 +42,21 @@ if(isset($_GET['exhibit']) == true){
   exit;
 }
 
+//商品出品
 if(isset($_POST['regist'])){
   product_exhibit($_FILES['pic'],$_POST['name'],$_POST['summary'],$_POST['category'],$_POST['condition'],$_POST['decide_date'],$_POST['price'],$_POST['priority'],$account_id);
 }
 
+//カテゴリー検索
+if(isset($_GET['category']) == true){
+  $top_list = search_category($_GET['category']);
+  require 'template/index.php';
+  exit;
+}
+
+//TOPページ
+
 $top_list = top_items();
-
-//var_dump($top_list);
-
 require 'template/index.php';
 exit;
 ?>

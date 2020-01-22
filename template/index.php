@@ -7,8 +7,8 @@
   <meta name="keywords" content="サイトキーワードを,で区切って入力">
   <link rel="stylesheet" href="public/css/flame.css">
   <link rel="stylesheet" href="public/css/contoroller.css">
-  <link rel="stylesheet" href="public/css/slick.css">
-  <link rel="stylesheet" href="public/css/slick-theme.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="slick/slick.css">
   <link rel="stylesheet" href="each/css/index.css">
   <link rel="stylesheet" href="each/css/search/search.css">
   <!--[if lt IE 9]>
@@ -18,7 +18,7 @@
   <script src="public/js/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
   <script src="public/js/masonry.pkgd.min.js"></script>
-  <script src="public/js/slick.min.js"></script>
+  <script src="slick/slick.min.js"></script>
   <script src="each/js/index.js"></script>
   <script src="each/js/search/search.js"></script>
 </head>
@@ -100,42 +100,42 @@
             <h2>CATEGORY<img src="image/icon/category-24px.svg"></h2>
             <div class="categoryIn">
               <ul class="Ccontent">
-                <li><a href=""></a></li>
+                <li><a href="index.php?category=F"></a></li>
                 <li><img src="image/icon/fashion.png"></li>
                 <li>FASHION</li>
               </ul>
               <ul class="Ccontent">
-                <li><a href=""></a></li>
+                <li><a href="index.php?category=C"></a></li>
                 <li><img src="image/icon/cosmetics.png"</li>
                 <li>COSMETICS</li>
               </ul>
               <ul class="Ccontent">
-                <li><a href=""></a></li>
+                <li><a href="index.php?category=M"></a></li>
                 <li><img src="image/icon/mobile.png"></li>
                 <li>MOBILE</li>
               </ul>
               <ul class="Ccontent">
-                <li><a href=""></a></li>
+                <li><a href="index.php?category=B"></a></li>
                 <li><img src="image/icon/baby.png"></li>
                 <li>BABY</li>
               </ul>
               <ul class="Ccontent">
-                <li><a href=""></a></li>
+                <li><a href="index.php?category=D"></a></li>
                 <li><img src="image/icon/daily.png"></li>
                 <li>DAILY</li>
               </ul>
               <ul class="Ccontent">
-                <li><a href=""></a></li>
+                <li><a href="index.php?category=S"></a></li>
                 <li><img src="image/icon/sports.png"></li>
                 <li>SPORTS</li>
               </ul>
               <ul class="Ccontent">
-                <li><a href=""></a></li>
+                <li><a href="index.php?category=I"></a></li>
                 <li><img src="image/icon/interior.png"></li>
                 <li>INTERIOR</li>
               </ul>
               <ul class="Ccontent">
-                <li><a href=""></a></li>
+                <li><a href="index.php?category=P"></a></li>
                 <li><img src="image/icon/book.png"></li>
                 <li>BOOK</li>
               </ul>
@@ -167,7 +167,7 @@
       </div>
       <div id="controller">
         <ul>
-          <li><a href=""><img src="image/site/logo_sq.png"></a></li>
+          <li><a href="index.php?back=1"><img src="image/site/logo_sq.png"></a></li>
           <li><a href="index.php?favList=1"><img src="image/icon/favorite-24px.svg"></a></li>
           <li><a href=""><img src="image/icon/chat-24px.svg"></a></li>
           <li><a href=""><img src="image/icon/account_circle-24px.svg"></a></li>
