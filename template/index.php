@@ -100,36 +100,44 @@
             <h2>CATEGORY<img src="image/icon/category-24px.svg"></h2>
             <div class="categoryIn">
               <ul class="Ccontent">
-                <li></li>
-                <li></li>
+                <li><a href=""></a></li>
+                <li><img src="image/icon/fashion.png"></li>
+                <li>FASHION</li>
               </ul>
               <ul class="Ccontent">
-                <li></li>
-                <li></li>
+                <li><a href=""></a></li>
+                <li><img src="image/icon/cosmetics.png"</li>
+                <li>COSMETICS</li>
               </ul>
               <ul class="Ccontent">
-                <li></li>
-                <li></li>
+                <li><a href=""></a></li>
+                <li><img src="image/icon/mobile.png"></li>
+                <li>MOBILE</li>
               </ul>
               <ul class="Ccontent">
-                <li></li>
-                <li></li>
+                <li><a href=""></a></li>
+                <li><img src="image/icon/baby.png"></li>
+                <li>BABY</li>
               </ul>
               <ul class="Ccontent">
-                <li></li>
-                <li></li>
+                <li><a href=""></a></li>
+                <li><img src="image/icon/daily.png"></li>
+                <li>DAILY</li>
               </ul>
               <ul class="Ccontent">
-                <li></li>
-                <li></li>
+                <li><a href=""></a></li>
+                <li><img src="image/icon/sports.png"></li>
+                <li>SPORTS</li>
               </ul>
               <ul class="Ccontent">
-                <li></li>
-                <li></li>
+                <li><a href=""></a></li>
+                <li><img src="image/icon/interior.png"></li>
+                <li>INTERIOR</li>
               </ul>
               <ul class="Ccontent">
-                <li></li>
-                <li></li>
+                <li><a href=""></a></li>
+                <li><img src="image/icon/book.png"></li>
+                <li>BOOK</li>
               </ul>
             </div>
           </div>

@@ -7,8 +7,10 @@
 /* date: 2019/
 /*--------------------------------------*/
 
-require 'function/exhibit/product_exhibit.php';
+
+require 'function/exhibit/product_exhibit.php';//<=ここでDBの情報設定してるよ
 require 'function/products/top_items.php';
+require 'function/search/search_category.php';
 
 $account_id = 1;
 /*---------主処理----------*/
