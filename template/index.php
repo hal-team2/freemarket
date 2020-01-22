@@ -86,9 +86,9 @@
             <button>View More</button>
           </div>
           <div class="trend Scontent">
-            <h2>TREND</h2>
+            <h2>TREND<img src="image/icon/trending_up-24px.svg"></h2>
             <ul>
-              <li><span class="rank">1.TREND</span><span class="title">シューズ</span></li>
+              <li><span class="rank">1.TREND</span><span class="title">シューズ</span><span class="Scount">n件の検索</span></li>
               <li><span class="rank">2.TREND</span><span class="title">shoes</span></li>
               <li><span class="rank">3.TREND</span><span class="title">zapatos</span></li>
               <li><span class="rank">4.TREND</span><span class="title">靴</span></li>
@@ -118,7 +118,7 @@
       <div id="contents">
 <!--        <div class="box img1"><a href="index.php?favList=1" class="Fbutton1">+</a><img src="image/products/F20000024.jpg"></div>-->
         <?php for($index = 0; $index < count($top_list); $index++){ ?>
-        <div class="box img<?php echo $index ?>"><a href="index.php?favList=<?php echo $top_list[$index]['id'] ?>" class="Fbutton<?php echo $index ?>">+</a><img src="image/products/<?php echo $top_list[$index]['img'] ?>"></div>
+        <div class="box"><a href="index.php?favList=<?php echo $top_list[$index]['id'] ?>" class="Fbutton">+</a><img src="image/products/<?php echo $top_list[$index]['img'] ?>"></div>
         <?php } ?>
       </div>
       <div id="controller">

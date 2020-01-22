@@ -120,6 +120,7 @@
   height: 100px;
   border-radius: 50px;
   background-color: rgba(0,0,0,0.6);
+  display: none;
 }
 .exhibit a{
   color: white;
