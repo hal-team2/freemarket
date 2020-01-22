@@ -19,6 +19,7 @@
 }
 .Bimg img {
   height: 500px;
+  border-radius: 20px;
 /*  width: 900px;*/
 }
 
@@ -131,6 +132,45 @@
   line-height: 100px;
 }
 
+/*------- slick setting -------*/
+
+.slick-button {
+  width: 100px;
+  height: 50px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: space-around;
+}
+
+.slick-button li{
+  display: inline-block;
+}
+.slick-button li button{
+  position: relative;
+  margin-top: 15px;
+  width: 20px;
+  height: 20px;
+/*  height: 15px;*/
+  text-indent: -9999px;
+}
+
+.slick-button li button::before{
+  content: '〇';
+  width: 20px;
+  left: 20px;
+  font-size: 1.0em;
+  text-indent: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: black;
+/*  transform: translate(-50%);*/
+}
+.slick-button li.slick-active button::before{
+  content: '🔴';
+}
 
 @media screen and (max-width:1000px){
   /*スマホ*/

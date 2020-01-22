@@ -30,7 +30,8 @@ $(function(){
     dots: true,
     arrows: false,
     centerMode: true,
-    centerPadding: '22%'
+    centerPadding: '22%',
+    dotsClass: 'slick-button'
   });
   
   if(mw > 1500){
@@ -50,7 +51,6 @@ $(function(){
   var $grid = $('#contents').imagesLoaded( function() {
   // 全ての画像が読み込まれてからMasonryを動作させる
     $grid.masonry({
-      // ここにオプションを記述
       itemSelector: '.box',
       isFitWidth: true,
       columnWidth: boxWidth,
@@ -78,18 +78,6 @@ $(function(){
 //    searchCnt--;
 //  });
   
-  $(window).scroll(function(){
-//    var scrollValue = $(this).scrollTop();
-//    var down = headerSlide(scrollValue);
-    
-//    var objectPosition = $('#contents').offset().top;
-//
-//    if(scrollValue > objectPosition && down == true && searchCnt % 2 == 0){
-//      console.log('ok');
-//    }
-//    else {
-//    }
-  });
   $('.img1').hover(
     function(){
       $('.Fbutton1').fadeIn(500);
