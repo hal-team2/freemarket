@@ -96,7 +96,43 @@
               <li><span class="rank">6.TREND</span><span class="title">chaussures</span></li>
             </ul>
           </div>
-          <div class="category Scontent"></div>
+          <div class="category Scontent">
+            <h2>CATEGORY<img src="image/icon/category-24px.svg"></h2>
+            <div class="categoryIn">
+              <ul class="Ccontent">
+                <li></li>
+                <li></li>
+              </ul>
+              <ul class="Ccontent">
+                <li></li>
+                <li></li>
+              </ul>
+              <ul class="Ccontent">
+                <li></li>
+                <li></li>
+              </ul>
+              <ul class="Ccontent">
+                <li></li>
+                <li></li>
+              </ul>
+              <ul class="Ccontent">
+                <li></li>
+                <li></li>
+              </ul>
+              <ul class="Ccontent">
+                <li></li>
+                <li></li>
+              </ul>
+              <ul class="Ccontent">
+                <li></li>
+                <li></li>
+              </ul>
+              <ul class="Ccontent">
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <div id="banner">
