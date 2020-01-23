@@ -100,11 +100,4 @@ function product_exhibit($upload_file,$product_name,$product_summary,$product_ca
     mysqli_close($cn);
 }
 
-
-//使用例
-//if(isset($_POST["product_name"]) && isset($_POST["summary"]) && isset($_POST["category"]) && isset($_POST["condition"]) && isset($_POST["decide_date"]) && isset($_POST["price"]) && isset($_POST["priority"])){
-//    product_exhibit($_FILES["pic"],$_POST["product_name"],$_POST["summary"],$_POST["category"],$_POST["condition"],$_POST["decide_date"],$_POST["price"],$_POST["priority"]);
-//}
-
-
 ?>
