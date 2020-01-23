@@ -8,16 +8,16 @@
 /*--------------------------------------*/
 
 
-//暫定で定数化
-const HOST = 'localhost';
-const DB_NAME = 'sd';
-const DB_USER = 'root';
-const DB_PASS = '';
+// //暫定で定数化
+// const HOST = 'localhost';
+// const DB_NAME = 'sd';
+// const DB_USER = 'root';
+// const DB_PASS = '';
 
 /*---------主処理----------*/
 
 /*
-トップページの商品画像と商品idを取得する関数
+トップページの商品画像と商品idをランダム取得する関数
 引数：なし
 戻り値：連想配列
 'id'=>商品ID
@@ -52,9 +52,5 @@ function top_items(){
 	}
 	return $list;
 }
-
-
-var_dump(top_items());
-
 
 ?>
