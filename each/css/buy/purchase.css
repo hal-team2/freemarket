@@ -15,6 +15,19 @@ html{
 }
 
 
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main h2{
+    color:purple;
+    font-weight:normal;
+    font-size:18px;
+    width:200px;
+}
+
 @media screen and (min-width:481px){
 
     #header{
@@ -23,8 +36,6 @@ html{
         margin-bottom:15px;
         background-color: gray;
     }
-
-
 
     #header a{
         color:white;
@@ -56,12 +67,7 @@ html{
         color:black;
     }
 
-    .main h2{
-        color:purple;
-        font-weight:normal;
-        font-size:18px;
-        width:200px;
-    }
+
 
     h2{
         margin-top:30px;

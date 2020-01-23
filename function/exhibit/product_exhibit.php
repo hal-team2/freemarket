@@ -30,6 +30,8 @@ date_default_timezone_set('Asia/Tokyo');
 /*---------主処理----------*/
 function product_exhibit($upload_file,$product_name,$product_summary,$product_category,$product_condition,$product_decide,$product_price,$priority,$exhibitor_id){
 
+    $product_price = mb_convert_kana($product_price,'n');
+
 	//商品概要
     if(isset($product_summary) && is_array($product_summary)){
         $summary = implode(",", $product_summary);
@@ -40,7 +42,6 @@ function product_exhibit($upload_file,$product_name,$product_summary,$product_ca
     if(isset($product_condition) && is_array($product_condition)){
         $condition = implode(",", $product_condition);
     }
-
 
     //発送日時
     if($product_decide == 2){

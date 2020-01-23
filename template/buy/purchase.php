@@ -21,7 +21,7 @@
                     <p>9999円</p>
                 </div>
                 <hr>
-                <div id="pay">    
+                <div id="pay">
                 <h2>支払方法</h2>
                         <span class="card">
                             <ul>
