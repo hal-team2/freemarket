@@ -78,14 +78,26 @@ $(function(){
 //    searchCnt--;
 //  });
   
-  $('.img1').hover(
+//  $('.img1').hover(
+//    function(){
+//      $('.Fbutton1').fadeIn(500);
+//    },
+//    function(){
+//      $('.Fbutton1').fadeOut(100);
+//    }
+//  );
+  
+  $('.box').hover(
     function(){
-      $('.Fbutton1').fadeIn(500);
+      var index = $('.box').index(this);
+      $('.Fbutton:eq(' + index + ')').fadeIn(200);
     },
     function(){
-      $('.Fbutton1').fadeOut(100);
+      var index = $('.box').index(this);
+      $('.Fbutton:eq(' + index + ')').fadeOut(100);
     }
   );
+  
 });
 
 /*------- headerSlide関数 -------*/
