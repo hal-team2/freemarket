@@ -10,7 +10,7 @@
 
 // //暫定で定数化
 // const HOST = 'localhost';
-// const DB_NAME = 'sd';
+// const DB_NAME = 'trustme';
 // const DB_USER = 'root';
 // const DB_PASS = '';
 
@@ -41,7 +41,7 @@ function item_info($id){
 	$cn = mysqli_connect(HOST,DB_USER,DB_PASS,DB_NAME);
 	mysqli_set_charset($cn,"utf8");
 
-	$sql = "SELECT id,product_name,summary,category_id,product_condition,exhibitor_id,img_id FROM products INNER JOIN product_img ON products.id = product_img.product_id WHERE id = '".$id."'ORDER BY RIGHT(product_id,5) DESC;";
+	$sql = "SELECT id,product_name,summary,category_id,product_condition,exhibitor_id,img_id FROM products INNER JOIN product_img ON products.id = product_img.product_id WHERE id = '".$id."';";
 	$result = mysqli_query($cn,$sql);
 	mysqli_close($cn);
 
