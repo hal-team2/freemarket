@@ -12,7 +12,7 @@ require 'function/exhibit/product_exhibit.php';//<=ここでDBの情報設定し
 require 'function/products/top_items.php';
 require 'function/search/search_category.php';
 
-$account_id = 1;
+$account_id = 2;
 /*---------主処理----------*/
 
 
@@ -54,8 +54,13 @@ if(isset($_GET['category']) == true){
   exit;
 }
 
-//TOPページ
+//商品詳細ページ
+if(isset($_GET['product']) == true){
+  require 'template/products/linenap.php';
+  exit;
+}
 
+//TOPページ
 $top_list = top_items($account_id);
 require 'template/index.php';
 exit;

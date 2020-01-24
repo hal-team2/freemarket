@@ -1,143 +1,46 @@
 /* CSS document */
 
-/*======= contents =======*/
-#contents {
-  position: absolute;
-  top: 0;
-  height: 100vh;
-  background-color: #38429D;
-  z-index: -1;
-}
-
-/*------- bg -------*/
-.bg li:nth-child(3){
-  border:solid black 3px;
-  float: left;
-  margin-top: 20px;
-}
-.bg li:nth-child(4){
-  float: left;
-  line-height: 50px;
-  margin-left: 30px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.bg li:nth-child(5){
+/*======= linenap =======*/
+#linenap {
   width: 100%;
-  border: solid black 3px;
-  overflow: hidden;
+  height: auto;
+  margin-top: 150px;
+/*
+  position: relative;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%);
+*/
+}
+#linenap p{
+  padding-top: 100px;
   text-align: center;
 }
-
-/*------- backButton -------*/
-  .backButton {
-    background-color: white;
-    text-align: center;
-  }
-  .backButton img{
-    vertical-align: middle;
-  }
-  .backButton a{
-    display: block;
-    vertical-align: middle;
-  }
-  .backButton a:hover{
-    background: rgba(0,0,0,0.5);
-  }
-
-
-@media screen and (max-width: 1000px){
-  /*スマホ*/
-  
-  /*======= header =======*/
-  #header ul{
-    visibility: hidden;
-  }
-  
-  /*-------- img -------*/
-  .img img{
-    width: 100%;
-    margin-top: 150px;
-  }
-
-  /*------- bg -------*/
-  .bg {
-    background-color: white;
-    height: 100vh;
-  }
-  .bg li:nth-child(1){
-    font-size: 400%;
-    padding-left: 50px;
-    /* text-decoration: underline; */
-    border-bottom: solid black 1px;
-  }
-  .bg li:nth-child(2){
-    margin: 20px;
-    font-size: 400%;
-    /* padding-left:50px; */
-    text-align: end;
-  }
-  .bg li:nth-child(3){
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    margin: 40px;
-  }
-  .bg li:nth-child(4){
-    font-size: 200%;
-    margin: 40px;
-    line-height: 100px;
-  }
-  .bg li:nth-child(5){
-    width: 90%;
-    height: 300px;
-    margin: 0 auto;
-    font-size: 300%;
-    line-height: 300px;
-  }
-  .bg span{
-    font-size: 80%;
-  }
-  
-  /*------- backButton -------*/
-  .backButton {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    background-color: white;
-    line-height: 100px;
-    margin: 20px;
-  }
-  .backButton img{
-    width: 80px;
-/*    margin-left: 10px;*/
-  }
-  .backButton a,
-  .cart a{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-  }
-  .cart {
-    position: absolute;
-    top: 10px;
-    /* left: 0; */
-    right: 0;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    /* background-color: white; */
-    line-height: 100px;
-    margin: 20px;
-  }
-  .cart img{
-    width: 100px;
-  }
-  
+#linenap img{
+  width: 500px;
+  border-radius: 20px;
 }
+#linenap .title{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+#linenap .title li{
+  height: 100px;
+  font-size: 2.5em;
+  border-bottom: solid black 1px;
+/*  text-align: center;*/
+  line-height: 100px;
+}
+#linenap .title li:nth-child(1){
+  width: 500px;
+}
+#linenap .title li:nth-child(2){
+  text-align: center;
+  width: 200px;
+}
+
+
 @media screen and (min-width: 1001px){
   /*PC*/
   .img img{

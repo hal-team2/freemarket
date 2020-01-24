@@ -5,43 +5,53 @@
   <title></title>
   <meta name="description" content="サイトキャプションを入力">
   <meta name="keywords" content="サイトキーワードを,で区切って入力">
-  <link rel="stylesheet" href="../pablic/css/flame.css">
-  <link rel="stylesheet" href="../pablic/css/linenap.css">
-  <link rel="stylesheet" href="../template-css/contoroller.css">
+  <link rel="stylesheet" href="public/css/flame.css">
+  <link rel="stylesheet" href="public/css/contoroller.css">
+  <link rel="stylesheet" href="each/css/products/linenap.css">
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
   <![endif]-->
-  <script src="../pablic/js/jquery-3.4.1.min.js"></script>
+  <script src="public/js/jquery-3.4.1.min.js"></script>
 </head>
   <body>
     <div id="wrapper">
       <div id="header">
         <ul>
-          <li><img src=""><input type="text" placeholder=""></li>
-          <li><a href="#">会員登録</a><a href="#">ログイン</a></li>
+          <li><img src="image/site/logo_sq.png"><input type="text" placeholder="" class="Sinput"></li>
+          <li><a href="index.php?id=1"><img src="image/icon/cavi.jpg"></a></li>
         </ul>
       </div>
-      <div id="contents">
-        <div class="bg">
-          <div class="img"><img src=""></div>
-          <ul>
-            <li>商品名</li>
-            <li>1000<span>YEN</span></li>
-            <li></li>
-            <li>出品者名</li>
-            <li>状態</li>
+      <div id="linenap">
+        <p><img src="image/products/B20000009.jpg"></p>
+        <ul class="title">
+          <li>title</li>
+          <li>country</li>
+        </ul>
+        <div class="details">
+          <ul class="detail">
+            <li>¥price</li>
+            <li>categoory</li>
+            <li>発送日の目安</li>
+          </ul>
+          <ul class="condition">
+            <li>a</li>
+            <li>i</li>
+            <li>u</li>
+            <li>e</li>
+            <li>o</li>
           </ul>
         </div>
       </div>
       <div class="backButton"><p><a href=""><img src=""></a></p></div>
       <div class="cart"><p><a href=""><img src=""></a></p></div>
+      
       <div id="controller">
         <ul>
-          <li><a href="#"><img src=""></a></li>
-          <li><a href="#"><img src=""></a></li>
-          <li><a href="#"><img src=""></a></li>
-          <li><a href="#"><img src=""></a></li>
+          <li><a href="index.php"><img src="image/site/logo_sq.png"></a></li>
+          <li><a href="index.php?favList=1"><img src="image/icon/favorite-24px.svg"></a></li>
+          <li><a href=""><img src="image/icon/chat-24px.svg"></a></li>
+          <li><a href=""><img src="image/icon/account_circle-24px.svg"></a></li>
         </ul>
       </div>
     </div>
