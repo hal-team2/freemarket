@@ -79,7 +79,7 @@ function product_exhibit($upload_file,$product_name,$product_summary,$product_ca
 
 
     //書き込み
-    $sql_products = "INSERT INTO products(id,product_name,summary,category_id,product_condition,send_date,exhibitor_id)VALUES('".$product_id."','".$product_name."','".$summary."','".$product_category."','".$condition."','".$decide_date."','".$exhibitor_id."');";
+    $sql_products = "INSERT INTO products(id,product_name,summary,category_id,product_condition,send_date,exhibitor_id,sell)VALUES('".$product_id."','".$product_name."','".$summary."','".$product_category."','".$condition."','".$decide_date."','".$exhibitor_id."',0);";
     mysqli_query($cn,$sql_products);
     $sql_price = "INSERT INTO product_price(product_id,price)VALUES('".$product_id."','".$product_price."');";
     mysqli_query($cn,$sql_price);
