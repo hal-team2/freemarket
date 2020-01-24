@@ -1,6 +1,6 @@
 <?php
 /*---------------------------------------
-/* pg_name: search_function
+/* pg_name: buyer_info
 /*---------------------------------------
 /* IH12A905 team2:
 /*---------------------------------------
@@ -10,7 +10,7 @@
 
 // //暫定で定数化
 // const HOST = 'localhost';
-// const DB_NAME = 'sd';
+// const DB_NAME = 'trustme';
 // const DB_USER = 'root';
 // const DB_PASS = '';
 
@@ -18,31 +18,40 @@
 /*---------主処理----------*/
 
 /*
-カテゴリ検索して検索結果の商品idと商品画像を返す関数
-引数：カテゴリー名(string)
+商品の購入手続き画面に商品情報を送る関数
+
+引数：商品ID(str)
 戻り値：連想配列
-'id' => 商品ID
 'img' => 商品画像
+'name' => 商品名
+'price' => 商品価格
 */
 
-function search_category($category){
-	$list = [];
-	$sql = "SELECT id,img_id FROM products INNER JOIN product_img ON products.id = product_img.product_id WHERE sell = 0 AND category_id ='".$category."' ORDER BY RIGHT(id,5) DESC;";
+
+function purchase_info($product_id){
 
 /*--------------データベース接続-------------------------*/
 	$cn = mysqli_connect(HOST,DB_USER,DB_PASS,DB_NAME);
 	mysqli_set_charset($cn,"utf8");
+
+
+/**---------商品情報呼び出し-----------**/
+	$sql = "SELECT product_name,img_id,price FROM (products INNER JOIN product_img ON products.id = product_img.product_id) INNER JOIN product_price ON products.id = product_price.product_id WHERE id ='".$product_id."';";
 	$result = mysqli_query($cn,$sql);
 	mysqli_close($cn);
 
+
 	while($row = mysqli_fetch_assoc($result)){
-		$product = [
-			'id' => $row['id'],
-			'img' => $row['img_id']
-		];
-		$list[] = $product;
+
+	$product = [
+		'img' => $row['img_id'],
+		'name' => $row['product_name'],
+		'price' => $row['price']
+	];
 	}
-	return $list;
+	return $product;
+
 }
+
 
 ?>

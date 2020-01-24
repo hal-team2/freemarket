@@ -24,7 +24,7 @@ if(isset($_GET['id']) == true){
 
 //topページ
 if(isset($_GET['back']) == true){
-  $top_list = top_items();
+  $top_list = top_items($account_id);
   require 'template/index.php';
   exit;
 }
@@ -56,7 +56,7 @@ if(isset($_GET['category']) == true){
 
 //TOPページ
 
-$top_list = top_items();
+$top_list = top_items($account_id);
 require 'template/index.php';
 exit;
 ?>

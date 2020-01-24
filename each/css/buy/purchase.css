@@ -1,225 +1,207 @@
 @charset "utf-8";
 
-*{
-    padding:0;
-    margin:0;
-}
-
-html{
-    background-color:#f5f5f5;
-}
-
-#wrap{
-    width:100%;
-    background-color:#f5f5f5;
+body{
+    background-color: #f5f5f5;
 }
 
 
-.item{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+.header{
+    height: 150px;
+    background-color: gray;
 }
 
-.main h2{
-    color:purple;
-    font-weight:normal;
-    font-size:18px;
-    width:200px;
+.header img{
+    height: 100px;
+    margin-top: 25px;
 }
 
-@media screen and (min-width:481px){
-
-    #header{
-        height: 60px;
-        width:100%;
-        margin-bottom:15px;
-        background-color: gray;
-    }
-
-    #header a{
-        color:white;
-    }
-
-    #header p{
-        margin-left: 20px;
-    }
-
-    #header img{
-        margin-top:5px;
-        height:50px;
-    }
-
-    .main{
-        background-color: #fff;
-        text-align: center;
-        height: auto;
-        width: 700px;
-        margin: 0 auto;
-            
-    }
-
-    #product_name,#address{
-        margin-left:10px;
-        text-align: left;
-        width:600px;
-        font-size:24px;
-        color:black;
-    }
 
 
 
-    h2{
-        margin-top:30px;
-    }
+/**********段落***********/
 
-    #pay{
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-align-items: center;
-        align-items: center;
-    }
+.section img{
+    width: 100px;
+}
 
-    #pay p{
-        margin-top:30px;
-        margin-left:20px;
-    }
+.section input{
+    background-color: #f5f5f5;
+    height: 20px;
+    padding: 0.5em;
+    border: 1px solid black;
+}
 
 
-    ul{
-        list-style: none;
-    }
+/********ボタン装飾***************/
 
-    li{
-        text-align:left;
-        margin-top:30px;
-    }
+.bt-design{
+    border-radius: 5px;
+    background-color: crimson;
+    color: #fff;
 
-    hr{
-        margin-top:10px;
-        margin-bottom:10px;
-    }
+    appearance: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
 
-    .footer{
-        background-color: #f5f5f5;
-        width: 100%;
-        height: 50px;
-    }
+}
 
-    .copyright{
-        width: 700px;
+.bt-design:hover{
+    background-color: red;
+}
+
+.bt-design2{
+    border-radius: 5px;
+    background-color: #808080;
+    color: #fff;
+
+    appearance: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.bt-design2:hover{
+    background-color: #a9a9a9;
+}
+
+
+/*******fotter内テキスト***********/
+.content{
         margin-left: auto;
         margin-right: auto;
     }
 
-    .copyright p{
-    margin: 0;
-    color: #666666;
-    font-size: 14px;
-    }
+.copyright p{
+    color: #888;
 }
 
-@media screen and (max-width:480px){
-
-    #header{
-        height: 60px;
-        width:100%;
-        margin-bottom:15px;
-        background-color: gray;
-    }
 
 
 
-    #header a{
-        color:white;
-    }
-
-    #header p{
-        margin-left: 20px;
-    }
-
-    #header img{
-        margin-top:5px;
-        height:50px;
-    }
+/************* スマホ*************/
+@media screen and (max-width:1000px){
 
     .main{
-        background-color: #fff;
-        text-align: center;
-        height: auto;
-        width: 100%;
-        margin: 0 auto;
-            
-    }
-
-    #product_name,#address{
-        margin-left:10px;
-        text-align: left;
-        width:90%;
-        font-size:24px;
-        color:black;
+        width: 90%;
+        font-size: 26px;
+        margin-top: 80px;
+        margin-bottom: 150px;
     }
 
     .main h2{
-        color:purple;
-        font-weight:normal;
-        font-size:18px;
-        width:200px;
+        font-size: 1.5em
+
     }
 
-    h2{
-        margin-top:30px;
+    .main img{
+        width: 45%;
     }
 
-    #pay{
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-align-items: center;
-        align-items: center;
-    }
-
-    #pay p{
-        margin-top:30px;
-        margin-left:20px;
-    }
-
-
-    ul{
-        list-style: none;
-    }
-
-    li{
-        text-align:left;
-        margin-top:30px;
-    }
-
-    hr{
-        margin-top:10px;
-        margin-bottom:10px;
-    }
-
-    .footer{
-        background-color: #f5f5f5;
-        width: 100%;
+    .main input.box{
+        width: 300px;
         height: 50px;
+        font-size: 1.0em;
     }
 
-    .copyright{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+    .main input.bt{
+        width: 30px;
+        margin-right: 1.5em;
+        transform: scale(2.0);
     }
 
-    .copyright p{
-    margin: 0;
-    color: #666666;
-    font-size: 14px;
+    .section p{
+        font-size: 1.3em;
     }
 
+    .section ul{
+        text-align: left;
+        margin-left: 200px;
+
+    }
+
+    .section li{
+        font-size: 1.3em;
+    }
+
+    .content{
+        width: 93%;
+        text-align: center;
+    }
+
+    .font_b{
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+/********項目名****************/
+
+    .sub{
+        color: purple;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2em;
+        padding: 5px 30px;
+    }
+
+    .bt-design{
+        width: 90%;
+        padding : 25px;
+        font-size: 1.2em;
+    }
+
+    .bt-design2{
+        width: 90%;
+        padding : 25px;
+        font-size: 1.2em;
+    }
 
 
 }
+/***********************************/
+
+
+/*************** PC ****************/
+@media screen and (min-width:1001px){
+
+    .main{
+        width: 50%;
+        font-size: 16px;
+    }
+
+    .content{
+        width: 50%;
+    }
+
+    .font_b{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .sub{
+        padding: 5px 30px;
+    }
+
+/********項目名****************/
+
+    .sub{
+        color: purple;
+        text-align: left;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .bt-design{
+        width: 80%;
+        padding : 15px;
+        font-size: 16px;
+    }
+
+    .bt-design2{
+        width: 40%;
+        padding : 10px;
+        font-size: 16px;
+    }
+
+}
+/**************************************/
