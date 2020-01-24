@@ -84,14 +84,6 @@ function product_exhibit($upload_file,$product_name,$product_summary,$product_ca
     $sql_price = "INSERT INTO product_price(product_id,price)VALUES('".$product_id."','".$product_price."');";
     mysqli_query($cn,$sql_price);
 
-
-
-    //*************TODO 発送期限を日付で登録****************
-    $sql_decide = "INSERT INTO decide_send_date(product_id,decide_date)VALUES('".$product_id."','".$decide_date."');"; 
-    mysqli_query($cn,$sql_decide);
-
-
-
     $sql_priority = "INSERT INTO product_priority(product_id,priority)VALUES('".$product_id."','".$priority."');";
     mysqli_query($cn,$sql_priority);
     $sql_img = "INSERT INTO product_img(product_id,img_id)VALUES('".$product_id."','".$product_img."');";
