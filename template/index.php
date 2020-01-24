@@ -78,6 +78,7 @@
             <ul class="sujestIn_1">
               <li><img src="image/site/outdoor.jpg"></li>
               <li><img src="image/site/it.jpg"></li>
+              <li><img src="image/site/cosume.jpg"></li>
             </ul>
             <ul class="sujestIn_2">
               <li><img src="image/site/snowpeak.jpg"></li>
@@ -162,7 +163,9 @@
       <div id="contents">
 <!--        <div class="box img1"><a href="index.php?favList=1" class="Fbutton1">+</a><img src="image/products/F20000024.jpg"></div>-->
         <?php for($index = 0; $index < count($top_list); $index++){ ?>
-        <div class="box"><a href="index.php?favList=<?php echo $top_list[$index]['id'] ?>" class="Fbutton">+</a><img src="image/products/<?php echo $top_list[$index]['img'] ?>"></div>
+        <div class="box"><a href="index.php?favList=<?php echo $top_list[$index]['id'] ?>" class="Fbutton">+</a>
+          <a href="index.php?product=<?php echo $top_list[$index]['id'] ?>" class="productButton"></a>
+          <img src="image/products/<?php echo $top_list[$index]['img'] ?>"></div>
         <?php } ?>
       </div>
       <div id="controller">
