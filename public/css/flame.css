@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: floralwhite;
+  background-color: #EFD8EB;
 }
 
 /* <input> */
@@ -59,6 +59,7 @@ button{
 #header ul{
   display: flex;
   justify-content: space-between;
+  background: #BA78BE;
 }
 #header a{
   width: 50px;
