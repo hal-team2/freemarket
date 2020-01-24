@@ -23,16 +23,18 @@
         </ul>
       </div>
       <div id="linenap">
-        <p><img src="image/products/B20000009.jpg"></p>
+        <p class="Pimg"><img src="image/products/B20000009.jpg"></p>
         <ul class="title">
           <li>title</li>
           <li>country</li>
         </ul>
         <div class="details">
           <ul class="detail">
-            <li>¥price</li>
-            <li>categoory</li>
-            <li>発送日の目安</li>
+            <li>¥<span>price</span></li>
+            <li>< カテゴリ ></li>
+            <li>インテリア・キッチン・ダイニング</li>
+            <li>< 発送日の目安 ></li>
+            <li>３～４日</li>
           </ul>
           <ul class="condition">
             <li>a</li>
@@ -42,6 +44,13 @@
             <li>o</li>
           </ul>
         </div>
+        <div class="account">
+          <ul>
+            <li><img src="image/icon/cavi.jpg"></li>
+            <li>name</li>
+          </ul>
+        </div>
+        <p class="buyButton"><a href="index.php?buy=1">購入する</a></p>
       </div>
       <div class="backButton"><p><a href=""><img src=""></a></p></div>
       <div class="cart"><p><a href=""><img src=""></a></p></div>
