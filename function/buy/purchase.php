@@ -25,13 +25,14 @@
 ・商品が購入された際にdecide_send_dateにレコード作成する
 ・productsのsellカラムを1に変更する
 ・商品id,購入者id,出品者idsession付与
+・購入時にポイント、売り上げを使用
 
 引数：会員ID(str),商品ID(str)
 戻り値：なし
 */
 
 
-function purchase($member_id,$product_id){
+function purchase($member_id,$product_id,$use_proceed,$use_point){
 
 /*--------------データベース接続-------------------------*/
 	$cn = mysqli_connect(HOST,DB_USER,DB_PASS,DB_NAME);
@@ -43,6 +44,15 @@ function purchase($member_id,$product_id){
 
 /*-----------データベース更新-------------------------------*/
     $sql = "UPDATE products SET sell = 1 WHERE id ='".$product_id."';";
+    mysqli_query($cn,$sql);
+
+    $sql = "SELECT proceeds,hold_points FROM member_proceeds WHERE member_id = '".$member_id."';";
+    $result = mysqli_query($cn,$sql);
+    $row = mysqli_fetch_assoc($result);
+    $proceeds = $row['proceeds'] - $use_proceed;
+    $point = $row['hold_points'] - $use_point;
+
+    $sql = "UPDATE member_proceeds SET proceeds = '".$proceeds."' , hold_points = '".$point."' WHERE member_id = '".$member_id."';";
     mysqli_query($cn,$sql);
 
 /********session用に取得**********/

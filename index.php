@@ -16,7 +16,7 @@ require 'function/buy/buyer_info.php';
 require 'function/buy/purchase_info.php';
 require 'function/buy/purchase.php';
 
-$account_id = 1;
+$account_id = "1";
 /*---------主処理----------*/
 
 
@@ -83,7 +83,7 @@ if(isset($_GET['p_confirm']) == true){
 
 //購入処理
 if(isset($_POST['purchase']) == true){
-  purchase($account_id,$_POST['p_item']);
+  purchase($account_id,$_POST['p_item'],$_POST['proceed'],$_POST['point']);
 }
 
 //TOPページ
