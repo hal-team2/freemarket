@@ -7,6 +7,7 @@
 /* date: 2019/
 /*--------------------------------------*/
 
+session_start();
 
 require 'function/exhibit/product_exhibit.php';//<=ここでDBの情報設定してるよ
 require 'function/products/top_items.php';
@@ -16,7 +17,9 @@ require 'function/buy/buyer_info.php';
 require 'function/buy/purchase_info.php';
 require 'function/buy/purchase.php';
 
-$account_id = "1";
+$now_account_id = "2";
+$buy_account_id = "2";
+$test_product = "B20000009";
 /*---------主処理----------*/
 
 
@@ -84,6 +87,32 @@ if(isset($_GET['p_confirm']) == true){
 //購入処理
 if(isset($_POST['purchase']) == true){
   purchase($account_id,$_POST['p_item'],$_POST['proceed'],$_POST['point']);
+}
+
+//発送日時指定
+if(isset($_GET['sell']) == true){
+  $product = item_info($test_product);
+  $buyer = buyer_info($buy_account_id);
+  require 'template/sell/sell.php';
+  require 'template/flame.php';
+  exit;
+}
+
+//通知ページ
+if(isset($_GET['notification']) == true){
+
+  if(isset($_SESSION['product_id']) == true){
+    
+    if($_SESSION['product_id'] == $account_id){
+      
+    }
+  
+  }
+  
+  
+  require 'template/notification/notification.php';
+  require 'template/flame.php';
+  exit;
 }
 
 //TOPページ
