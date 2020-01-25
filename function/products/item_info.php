@@ -27,8 +27,10 @@ DBから商品ID、商品名、概要、カテゴリ、商品状態、出品者I
 'summary' => 商品概要
 'category' => カテゴリ
 'codition' => 商品状態
+'send_date' => 発送日の目安
 'exhibitor_id' => 出品者ID
 'img' => 商品画像
+'price' => 値段
 
 */
 
@@ -41,7 +43,7 @@ function item_info($id){
 	$cn = mysqli_connect(HOST,DB_USER,DB_PASS,DB_NAME);
 	mysqli_set_charset($cn,"utf8");
 
-	$sql = "SELECT id,product_name,summary,category_id,product_condition,exhibitor_id,img_id FROM products INNER JOIN product_img ON products.id = product_img.product_id WHERE id = '".$id."';";
+	$sql = "SELECT id,product_name,summary,category_id,product_condition,send_date,exhibitor_id,img_id,price FROM (products INNER JOIN product_img ON products.id = product_img.product_id) INNER JOIN product_price ON products.id = product_price.product_id WHERE id ='".$id."';";
 	$result = mysqli_query($cn,$sql);
 	mysqli_close($cn);
 
@@ -75,11 +77,14 @@ function item_info($id){
 		'summary' => $row['summary'],
 		'category' => $category,
 		'codition' => $condition,
+		'send_date' => $row['send_date'],
 		'exhibitor_id' => $row['exhibitor_id'],
-		'img' => $row['img_id']
+		'img' => $row['img_id'],
+		'price' => $row['price']
 	];
 	}
 	return $product;
 }
+
 
 ?>
