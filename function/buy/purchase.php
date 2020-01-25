@@ -20,10 +20,11 @@
 
 /*
 
-＜購入ボタンが押されたときに発動するやつ＞
+＜購入確定したときに発動するやつ＞
 
-商品が購入された際にdecide_send_dateにレコード作成する関数
-productsのsellカラムを1に変更する関数
+・商品が購入された際にdecide_send_dateにレコード作成する
+・productsのsellカラムを1に変更する
+・商品id,購入者id,出品者idsession付与
 
 引数：会員ID(str),商品ID(str)
 戻り値：なし
@@ -44,7 +45,17 @@ function purchase($member_id,$product_id){
     $sql = "UPDATE products SET sell = 1 WHERE id ='".$product_id."';";
     mysqli_query($cn,$sql);
 
+/********session用に取得**********/
+    $sql = "SELECT exhibitor_id FROM products WHERE id = '".$product_id."';";
+	$result = mysqli_query($cn,$sql);
+	$row = mysqli_fetch_assoc($result);
+
 	mysqli_close($cn);
+
+	session_start();
+	$_SESSION['product_id'] = $product_id;
+	$_SESSION['buyer_id'] = $member_id;
+	$_SESSION['exhibitor_id'] = $row['exhibitor_id'];
 
 }
 
