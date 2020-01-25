@@ -12,8 +12,11 @@ require 'function/exhibit/product_exhibit.php';//<=ここでDBの情報設定し
 require 'function/products/top_items.php';
 require 'function/search/search_category.php';
 require 'function/products/item_info.php';
+require 'function/buy/buyer_info.php';
+require 'function/buy/purchase_info.php';
+require 'function/buy/purchase.php';
 
-$account_id = 2;
+$account_id = 1;
 /*---------主処理----------*/
 
 
@@ -62,9 +65,25 @@ if(isset($_GET['product']) == true){
 
 //購入ページ
 if(isset($_GET['buy']) == true){
+  $buyer = buyer_info($account_id);
+  $item = purchase_info($_GET['buy']);
   require 'template/buy/purchase.php';
   require 'template/flame.php';
   exit;
+}
+
+//購入確認ページ
+if(isset($_GET['p_confirm']) == true){
+  $buyer = buyer_info($account_id);
+  $item = purchase_info($_GET['item']);
+  require 'template/buy/purchase_confirm.php';
+  require 'template/flame.php';
+  exit;
+}
+
+//購入処理
+if(isset($_POST['purchase']) == true){
+  purchase($account_id,$_POST['p_item']);
 }
 
 //TOPページ

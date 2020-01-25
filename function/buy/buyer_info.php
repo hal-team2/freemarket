@@ -36,6 +36,17 @@ function buyer_info($member_id){
 	mysqli_set_charset($cn,"utf8");
 
 
+/*------------売上が作成されていなければレコード作成----------*/
+	$sql = "SELECT COUNT(*) FROM member_proceeds WHERE member_id = '".$member_id."';";
+	$result = mysqli_query($cn,$sql);
+	$cnt = mysqli_fetch_assoc($result);
+
+	if($cnt['COUNT(*)'] == 0){
+		$sql = "INSERT INTO member_proceeds(member_id,proceeds,hold_points) VALUES('".$member_id."',0,0);";
+		mysqli_query($cn,$sql);
+	}
+
+
 /**---------会員情報呼び出し-----------**/
 	$sql = "SELECT proceeds,hold_points,user_name,address FROM member INNER JOIN member_proceeds ON member.id = member_proceeds.member_id WHERE member_id ='".$member_id."';";
 	$result = mysqli_query($cn,$sql);
