@@ -11,6 +11,7 @@
 require 'function/exhibit/product_exhibit.php';//<=ここでDBの情報設定してるよ
 require 'function/products/top_items.php';
 require 'function/search/search_category.php';
+require 'function/products/item_info.php';
 
 $account_id = 2;
 /*---------主処理----------*/
@@ -56,6 +57,8 @@ if(isset($_GET['category']) == true){
 
 //商品詳細ページ
 if(isset($_GET['product']) == true){
+  $product_detail = item_info($_GET['product']);
+//  var_dump($product_detail);
   require 'template/products/linenap.php';
   exit;
 }
