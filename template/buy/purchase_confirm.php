@@ -70,6 +70,8 @@
 <br>
 <br>
 <input type="hidden" name="p_item" value="<?php echo $_GET['item'];?>">
+<input type="hidden" name="proceed" value="<?php echo $_GET['use_proceed'];?>">
+<input type="hidden" name="point" value="<?php echo $_GET['use_point'];?>">
 <p><button type="submit" name="purchase" class="bt-design">購入する</button></p>
 <br>
 </form>

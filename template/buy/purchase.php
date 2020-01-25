@@ -5,10 +5,10 @@
     <title>購入手続画面</title>
     <meta name="description" content="サイトキャプションを入力">
     <meta name="keywords" content="サイトキーワードを,で区切って入力">
-    <link rel="stylesheet" href="public/css/flame.css">
-    <link rel="stylesheet" href="public/css/contoroller.css">
-    <link rel="stylesheet" href="public/css/main.css">
-    <link rel="stylesheet" href="each/css/buy/purchase.css">
+    <link rel="stylesheet" href="./public/css/flame.css">
+    <link rel="stylesheet" href="./public/css/contoroller.css">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./each/css/buy/purchase.css">
 </head>
 <body>
 <div id="header">
@@ -40,11 +40,11 @@
   <br>
 <div class="section">
   <h2 class="sub">ポイントの使用</h2>
-    <p><input type="text" name="use_point" size="8" class="box" value="0"> P</p>
+    <p><input type="number" name="use_point" size="8" class="box" value="0" max="<?php echo $buyer['point'];?>"> P</p>
     <p>所持ポイント: <?php echo $buyer['point'];?>P</p>
   <br>
   <h2 class="sub">売上金の使用</h2>
-    <p><input type="text" name="use_proceed" size="8" class="box" value="0"> 円</p>
+    <p><input type="number" name="use_proceed" size="8" class="box" value="0" max="<?php echo $buyer['proceeds'];?>"> 円</p>
     <p>所持売上: <?php echo $buyer['proceeds'];?>円</p>
 </div>
   <br>
