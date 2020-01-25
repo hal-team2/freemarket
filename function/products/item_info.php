@@ -49,7 +49,7 @@ function item_info($id){
 
 	//カテゴリ
 	if($row['category_id'] == 'F'){
-		$categoty = "ファッション・アクセサリ－";
+		$category = "ファッション・アクセサリ－";
 	}elseif($row['category_id'] == 'D'){
 		$category = "日用品・文具";
 	}elseif($row['category_id'] == 'S'){
