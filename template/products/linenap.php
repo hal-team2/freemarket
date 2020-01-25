@@ -16,17 +16,10 @@
 </head>
   <body>
     <div id="wrapper">
-      <div id="header">
-        <ul>
-          <li><img src="image/site/logo_sq.png"><input type="text" placeholder="" class="Sinput"></li>
-          <li><a href="index.php?id=1"><img src="image/icon/cavi.jpg"></a></li>
-        </ul>
-      </div>
       <div id="linenap">
         <p class="Pimg"><img src="image/products/<?php echo $product_detail['img']; ?>"></p>
         <ul class="title">
           <li><?php  echo $product_detail['name'] ?></li>
-          <li>JP</li>
         </ul>
         <div class="details">
           <ul class="detail">
@@ -53,14 +46,6 @@
       
       <p class="backButton"><a href="index.php"><img src="image/icon/backspace.png"></a></p>
       
-      <div id="controller">
-        <ul>
-          <li><a href="index.php"><img src="image/site/logo_sq.png"></a></li>
-          <li><a href="index.php?favList=1"><img src="image/icon/favorite-24px.svg"></a></li>
-          <li><a href=""><img src="image/icon/chat-24px.svg"></a></li>
-          <li><a href=""><img src="image/icon/account_circle-24px.svg"></a></li>
-        </ul>
-      </div>
     </div>
   </body>
 </html>

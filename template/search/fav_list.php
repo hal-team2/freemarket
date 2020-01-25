@@ -17,13 +17,6 @@
 </head>
 <body>
   <div id="wrapper">
-  <div id="header">
-    <ul>
-      <li><img src="image/site/logo_sq.png"><input type="text" placeholder="" class="Sinput"></li>
-      <li><a href="index.php?id=1"><img src="image/icon/cavi.jpg"></a></li>
-<!--          <li><a href="../index.php?">会員登録</a><a href="">ログイン</a></li>-->
-    </ul>
-  </div>
 <!--
 <div id="favCl">
   </div>
@@ -52,14 +45,6 @@
       <div class="fav_content"></div>
       <div class="fav_content"></div>
     </div>
-  </div>
-  <div id="controller">
-    <ul>
-      <li><a href="index.php?back=1"><img src="image/site/logo_sq.png"></a></li>
-      <li><a href="#"><img src="image/icon/favorite-24px.svg"></a></li>
-      <li><a href="#"><img src="image/icon/chat-24px.svg"></a></li>
-      <li><a href="#"><img src="image/icon/account_circle-24px.svg"></a></li>
-    </ul>
   </div>
   </div>
 </body>

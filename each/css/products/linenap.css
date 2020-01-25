@@ -32,9 +32,13 @@
 
 /*------- title -------*/
 #linenap .title{
+  margin: 0 auto;
+  width: 90%;
   margin-top: 50px;
-  display: flex;
-  justify-content: space-around;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  background-color: darksalmon;
+
 }
 #linenap .title li{
   height: 100px;
@@ -42,8 +46,10 @@
   border-bottom: solid black 1px;
 /*  text-align: center;*/
   line-height: 100px;
+  margin-left: 30px;
 }
 #linenap .title li:nth-child(1){
+  padding: 5px;
   width: 600px;
 }
 #linenap .title li:nth-child(2){
@@ -53,15 +59,16 @@
 
 /*------- details -------*/
 .details {
+  margin: 0 auto;
   margin-top: 50px;
-  width: 100%;
+  width: 90%;
   height: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 50px;
 }
 .details .detail{
-  width: 50%;
+  width: 55%;
   height: auto;
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
@@ -125,10 +132,14 @@
 
 /*------- account -------*/
 .account {
-  width: 60%;
+  width: 90%;
   height: 100px;
   line-height: 100px;
   margin-left: 50px;
+  background-color: darkturquoise;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  border-radius: 20px;
+
 }
 .account ul{
   display: flex;
