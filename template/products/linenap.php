@@ -23,25 +23,23 @@
         </ul>
       </div>
       <div id="linenap">
-        <p class="Pimg"><img src="image/products/B20000009.jpg"></p>
+        <p class="Pimg"><img src="image/products/<?php echo $product_detail['img']; ?>"></p>
         <ul class="title">
-          <li>title</li>
-          <li>country</li>
+          <li><?php  echo $product_detail['name'] ?></li>
+          <li>JP</li>
         </ul>
         <div class="details">
           <ul class="detail">
-            <li>¥<span>price</span></li>
+            <li>¥<span><?php echo $product_detail['id']; ?></span></li>
             <li>< カテゴリ ></li>
-            <li>インテリア・キッチン・ダイニング</li>
+            <li><?php echo $product_detail['category']; ?></li>
             <li>< 発送日の目安 ></li>
-            <li>３～４日</li>
+            <li><?php echo $product_detail['id']; ?></li>
           </ul>
           <ul class="condition">
-            <li>a</li>
-            <li>i</li>
-            <li>u</li>
-            <li>e</li>
-            <li>o</li>
+<?php for($cnt = 0; $cnt < count($product_detail['codition']); $cnt++){ ?>
+            <li><?php echo $product_detail['codition'][$cnt]; ?></li>
+<?php } ?>
           </ul>
         </div>
         <div class="account">
@@ -50,7 +48,7 @@
             <li>name</li>
           </ul>
         </div>
-        <p class="buyButton"><a href="index.php?buy=1">購入する</a></p>
+        <p class="buyButton"><a href="index.php?buy=<?php echo $product_detail['id'] ?>">購入する</a></p>
       </div>
       <div class="backButton"><p><a href=""><img src=""></a></p></div>
       <div class="cart"><p><a href=""><img src=""></a></p></div>
