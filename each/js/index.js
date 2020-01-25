@@ -44,7 +44,7 @@ $(function(){
     boxWidth = (mw - 120) / 2;
   }
   
-  $('.box img').css('width',boxWidth);
+//  $('.box .productImg').css('width',boxWidth);
   $('.box').css('width',boxWidth);
   
   

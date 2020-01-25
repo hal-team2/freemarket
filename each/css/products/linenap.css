@@ -5,7 +5,7 @@
   width: 100%;
   height: auto;
   margin-top: 150px;
-  padding-bottom: 150px;
+  padding-bottom: 200px;
 }
 #linenap .Pimg{
   padding-top: 100px;
@@ -143,75 +143,18 @@
   margin-left: 50px;
 }
 
+/*------- backbutton -------*/
+.backButton{
+  position: fixed;
+  top: 25px;
+  right: 50px;
+  z-index: 200;
+}
+.backButton img{
+  width: 100px;
+}
+
 @media screen and (min-width: 1001px){
   /*PC*/
-  .img img{
-    width: 300px;
-    position: relative;
-    top: 50%;
-    transform: translate(0,-50%);
-  }
-  .img {
-    margin-top: 50px;
-    margin-left: 30px;
-    height: 400px;
-    width: 300px;
-    background-color: skyblue;
-    /* line-height: 300px; */
-  }
-  .bg {
-    height: 500px;
-    width: 700px;
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    transform: translate(-50%);
-    background-color: white;
-    display: flex;
-    border-radius: 20px;
-  }
-  .bg ul{
-    height: 400px;
-    width: 300px;
-    margin-left: 40px;
-    margin-top: 50px;
-    text-align: center;
-  }
-  .bg li:nth-child(1){
-    line-height: 80px;
-    height: 80px;
   
-  }
-  .bg li:nth-child(2){
-    border-bottom: solid black 1px;
-  }
-  .bg li:nth-child(3){
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-  }
-  .bg li:nth-child(5){
-    line-height: 200px;
-  }
-  
-  /*------- img -------*/
-  
-  
-  
-  /*------- backButton -------*/
-  .backButton {
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    line-height: 60px;
-    margin: 20px;
-  }
-  .backButton img{
-    width: 40px;
-  }
-  .backButton a{
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-  }
 }

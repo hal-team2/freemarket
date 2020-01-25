@@ -131,7 +131,7 @@
 </div>
 <div id="controller">
   <ul>
-    <li><a href="#"><img src="image/site/logo_sq.png"></a></li>
+    <li><a href="index.php"><img src="image/site/logo_sq.png"></a></li>
     <li><a href="#"><img src="image/icon/favorite-24px.svg"></a></li>
     <li><a href="#"><img src="image/icon/chat-24px.svg"></a></li>
     <li><a href="#"><img src="image/icon/account_circle-24px.svg"></a></li>

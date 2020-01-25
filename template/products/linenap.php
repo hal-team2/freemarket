@@ -30,11 +30,11 @@
         </ul>
         <div class="details">
           <ul class="detail">
-            <li>¥<span><?php echo $product_detail['id']; ?></span></li>
+            <li>¥<span><?php echo $product_detail['price']; ?></span></li>
             <li>< カテゴリ ></li>
             <li><?php echo $product_detail['category']; ?></li>
             <li>< 発送日の目安 ></li>
-            <li><?php echo $product_detail['id']; ?></li>
+            <li><?php echo $product_detail['send_date']; ?></li>
           </ul>
           <ul class="condition">
 <?php for($cnt = 0; $cnt < count($product_detail['codition']); $cnt++){ ?>
@@ -50,8 +50,8 @@
         </div>
         <p class="buyButton"><a href="index.php?buy=<?php echo $product_detail['id'] ?>">購入する</a></p>
       </div>
-      <div class="backButton"><p><a href=""><img src=""></a></p></div>
-      <div class="cart"><p><a href=""><img src=""></a></p></div>
+      
+      <p class="backButton"><a href="index.php"><img src="image/icon/backspace.png"></a></p>
       
       <div id="controller">
         <ul>
