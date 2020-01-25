@@ -25,7 +25,7 @@
         <ul>
           <li><a href="index.php"><img src="image/site/logo_sq.png"></a></li>
           <li><a href="index.php?favList=1"><img src="image/icon/favorite_border3.png"></a></li>
-          <li><a href=""><img src="image/icon/notifications_none.png"></a></li>
+          <li><a href="index.php?notification=1"><img src="image/icon/notifications_none.png"></a></li>
           <li><a href=""><img src="image/icon/account_circle.png"></a></li>
         </ul>
       </div>
