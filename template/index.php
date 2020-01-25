@@ -24,7 +24,7 @@
 </head>
   <body>
     <div id="wrapper">
-      <div class="exhibit"><a href="index.php?exhibit=1">+</a></div>
+      <div class="exhibit"><a href="index.php?exhibit=1"></a></div>
       <div id="header">
         <ul>
           <li><img src="image/site/logo_sq.png"><input type="text" placeholder="" class="Sinput"></li>
@@ -122,16 +122,17 @@
       </div>
       <div id="contents">
         <?php for($index = 0; $index < count($top_list); $index++){ ?>
-        <div class="box"><a href="index.php?favList=<?php echo $top_list[$index]['id'] ?>" class="Fbutton">+</a>
+        <div class="box"><a href="index.php?favList=<?php echo $top_list[$index]['id'] ?>" class="Fbutton"></a>
           <a href="index.php?product=<?php echo $top_list[$index]['id'] ?>" class="productButton"></a>
-          <img src="image/products/<?php echo $top_list[$index]['img'] ?>"></div>
+          <img src="image/products/<?php echo $top_list[$index]['img'] ?>" class="productImg">
+          </div>
         <?php } ?>
       </div>
       <div id="controller">
         <ul>
           <li><a href="index.php"><img src="image/site/logo_sq.png"></a></li>
-          <li><a href="index.php?favList=1"><img src="image/icon/favorite-24px.svg"></a></li>
-          <li><a href=""><img src="image/icon/chat-24px.svg"></a></li>
+          <li><a href="index.php?favList=1"><img src="image/icon/favorite_border3.png"></a></li>
+          <li><a href=""><img src="image/icon/notifications_none.png"></a></li>
           <li><a href=""><img src="image/icon/account_circle-24px.svg"></a></li>
         </ul>
       </div>
