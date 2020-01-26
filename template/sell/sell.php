@@ -63,7 +63,7 @@
   <br>
   <br>
   <ul class="button">
-    <li><button type="submit" name="purchase" class="bt-design">確認</button></li>
+    <li><button type="submit" name="sell_confirm" class="bt-design">確認</button></li>
     <li><button type="submit" name="top" class="bt-design2" onclick="location.href=''">TOPへ</button></li>
   </ul>
   <br>

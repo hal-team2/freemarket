@@ -22,7 +22,7 @@ require 'function/buy/buyer_info.php';
 require 'function/buy/purchase_info.php';
 require 'function/buy/purchase.php';
 
-$now_account_id = "2";
+$now_account_id = "1";
 $buy_account_id = "2";
 $test_product = "B20000009";
 /*---------主処理----------*/
@@ -103,6 +103,10 @@ if(isset($_GET['sell']) == true){
   exit;
 }
 
+//発送日確認ページ
+if(isset($_GET['sell_confirm']) == true){
+}
+
 //入金処理
 if(isset($_GET['deposit']) == true){
   $_SESSION['buyer_id'] = "";
@@ -110,9 +114,11 @@ if(isset($_GET['deposit']) == true){
 
 //通知ページ
 if(isset($_GET['notification']) == true){
+  
 
   if(isset($_SESSION['product_id']) == false){
     require 'template/notification/notification0.php';
+//    require 'template/evaluation/evaluation.php';
     require 'template/flame.php';
     exit;
   }
@@ -138,10 +144,13 @@ if(isset($_GET['notification']) == true){
     require 'template/flame.php';
     exit;
   }
-  
-  
-  
-  
+}
+
+//会員ページ
+if(isset($_GET['account']) == true){
+  require 'template/member/member.php';
+    require 'template/flame.php';
+  exit;
 }
 
 //TOPページ
