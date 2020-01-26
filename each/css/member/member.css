@@ -1,20 +1,23 @@
 #member {
   padding-top: 60px;
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
-  height: 500px;
-  background-color: white;
+  margin-top: 170px;
+  height: auto;
   margin-bottom: 100px;
+  padding-bottom: 100px;
+  background-color: white;
+  border-radius: 50px;
 }
 .memberIn {
-  width: 80%;
+  width: 100%;
   height: 270px;
   display: flex;
-/*  background: rgba(30,100,200,1);*/
+  justify-content: space-around;
   margin: 0 auto;
 }
 #member ul{
-  width: 50%;
+  width: 35%;
 }
 #member li{
   text-align: center;
@@ -24,60 +27,65 @@
   margin-top: 50px;
 }
 #member .account img{
-  border: solid 5px black;
-  height: 125px;
-  border-radius: 75px;
+/*  border: solid 5px black;*/
+  height: 150px;
 }
 #member .country img{
-  height: 125px;
+  height: 150px;
   padding: 25px;
 }
 #member .memberIn li:nth-child(2){
   color: black;
   margin: 0 auto;
-  width: 100px;
-  font-size: 1.2em;
+  width: auto;
+  font-size: 2.0em;
   margin-top: 20px;
-  line-height: 40px;
+  line-height: 60px;
   border-bottom: solid black 1px;
 }
 #member p{
-  width: 100%;
-  height: 100px;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  padding: 50px;
   text-align: center;
   line-height: 100px;
+  margin-top: 100px;
   background-color: teal;
+  border-radius: 50px;
+  font-size: 1.5em;
 }
 #member .memberIn_2{
+  margin-top: 50px;
   width: 100%;
-  height: 100px;
-  background-color: tomato;
+  height: 150px;
 }
 #member .memberIn_2 ul{
   width: 80%;
   height: 100%;
   margin: 0 auto;
-  border: solid black 1px;
   display: flex;
+  background-color: tomato;
+  border-radius: 50px;
 }
 #member .memberIn_2 li{
-  margin-top: 15px;
-  height: 70px;
+/*  border: solid black 1px;*/
+  margin-top: 25px;
+  height: 100px;
   width: 50%;
-  border: solid black 1px;
+  font-size: 2.0em;
 }
 #member .memberIn_2 li:nth-child(1){
   display: flex;
   justify-content: space-around;
 }
 #member .memberIn_2 li:nth-child(2){
-  font-size: 1.5em;
-  line-height: 70px;
+  font-size: 2.5em;
+  line-height: 100px;
 }
 #member .memberIn_2 a{
-  height: 40px;
-  margin-top: 15px;
+  height: 50px;
+  margin-top: 25px;
   line-height: 40px;
   width: 100px;
-  border: solid black 1px;
 }
