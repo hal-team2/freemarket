@@ -20,7 +20,8 @@
     <div id="wrapper">
       <div id="evaluation">
         <ul>
-          <li>取引が完了しました。<?php ?>さんを評価してください。</li>
+
+          <li>取引が完了しました。<?php echo $exhibitor['user_name'];?>さんを評価してください。</li>
           <li class="eva"><button>評価する</button></li>
         </ul>
       </div>
