@@ -5,26 +5,25 @@
   <title></title>
   <meta name="description" content="サイトキャプションを入力">
   <meta name="keywords" content="サイトキーワードを,で区切って入力">
-  <link rel="stylesheet" href="../../public/css/flame.css">
-  <link rel="stylesheet" href="../../public/css/contoroller.css">
-  <link rel="stylesheet" href="../../each/css/member/member.css">
+  <link rel="stylesheet" href="public/css/flame.css">
+  <link rel="stylesheet" href="public/css/contoroller.css">
+  <link rel="stylesheet" href="each/css/member/member.css">
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
   <![endif]-->
+  
 </head>
   <body>
     <div id="wrapper">
-      <div id="header"></div>
-      <div id="controller"></div>
       <div id="member">
         <div class="memberIn">
           <ul class="account">
-            <li><img src="../../image/icon/account_circle.png"></li>
+            <li><img src="image/icon/account_circle.png"></li>
             <li>Name</li>
           </ul>
           <ul class="country">
-            <li><img src="../../image/country/UK.gif"></li>
+            <li><img src="image/country/UK.gif"></li>
             <li>Country</li>
           </ul>
         </div>
@@ -35,8 +34,6 @@
             <li>★★★☆☆</li>
           </ul>
         </div>
-      </div>
-      <div id="contents">
       </div>
     </div>
   </body>
