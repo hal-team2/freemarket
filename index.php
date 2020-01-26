@@ -96,8 +96,8 @@ if(isset($_POST['purchase']) == true){
 
 //発送日時指定
 if(isset($_GET['sell']) == true){
-  $product = item_info($test_product);
-  $buyer = buyer_info($buy_account_id);
+  $product = item_info($_SESSION['product_id']);
+  $buyer = buyer_info($_SESSION['buyer_id']);
   require 'template/sell/sell.php';
   require 'template/flame.php';
   exit;
