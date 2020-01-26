@@ -9,6 +9,8 @@
 
 session_start();
 
+$_SESSION['test'] = 2;
+
 require 'function/exhibit/product_exhibit.php';//<=ここでDBの情報設定してるよ
 require 'function/products/top_items.php';
 require 'function/search/search_category.php';
@@ -47,7 +49,7 @@ if(isset($_GET['exhibit']) == true){
 
 //商品出品
 if(isset($_POST['regist'])){
-  product_exhibit($_FILES['pic'],$_POST['name'],$_POST['summary'],$_POST['category'],$_POST['condition'],$_POST['decide_date'],$_POST['price'],$_POST['priority'],$account_id);
+  product_exhibit($_FILES['pic'],$_POST['name'],$_POST['summary'],$_POST['category'],$_POST['condition'],$_POST['decide_date'],$_POST['price'],$_POST['priority'],$now_account_id);
 }
 
 //カテゴリー検索
@@ -68,7 +70,7 @@ if(isset($_GET['product']) == true){
 
 //購入ページ
 if(isset($_GET['buy']) == true){
-  $buyer = buyer_info($account_id);
+  $buyer = buyer_info($now_account_id);
   $item = purchase_info($_GET['buy']);
   require 'template/buy/purchase.php';
   require 'template/flame.php';
@@ -77,7 +79,7 @@ if(isset($_GET['buy']) == true){
 
 //購入確認ページ
 if(isset($_GET['p_confirm']) == true){
-  $buyer = buyer_info($account_id);
+  $buyer = buyer_info($now_account_id);
   $item = purchase_info($_GET['item']);
   require 'template/buy/purchase_confirm.php';
   require 'template/flame.php';
@@ -101,22 +103,29 @@ if(isset($_GET['sell']) == true){
 //通知ページ
 if(isset($_GET['notification']) == true){
 
-  if(isset($_SESSION['product_id']) == true){
+  if(isset($_SESSION['test']) == true){
     
-    if($_SESSION['product_id'] == $account_id){
-      
+    if($now_account_id == 1){
+      require 'template/notification/notification1.php';
+      require 'template/flame.php';
+      exit;
+    }
+    else {
+      require 'template/notification/notification2.php';
+      require 'template/flame.php';
+      exit;
     }
   
   }
   
   
-  require 'template/notification/notification.php';
+  require 'template/notification/notification0.php';
   require 'template/flame.php';
   exit;
 }
 
 //TOPページ
-$top_list = top_items($account_id);
+$top_list = top_items($now_account_id);
 require 'template/index.php';
 require 'template/flame.php';
 exit;
