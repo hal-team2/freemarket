@@ -57,14 +57,16 @@
   <div class ="section">
     <h2 class="sub">購入者</h2>
 <!--       <p><img src="image/icon/"></p> -->
-      <p><?php echo $buyer['user_name'] ?></p>
+      <p class="name"><?php echo $buyer['user_name'] ?></p>
   </div>
   <br>
   <br>
   <br>
-  <p><button type="submit" name="purchase" class="bt-design">確認</button></p>
+  <ul class="button">
+    <li><button type="submit" name="purchase" class="bt-design">確認</button></li>
+    <li><button type="submit" name="top" class="bt-design2" onclick="location.href=''">TOPへ</button></li>
+  </ul>
   <br>
-  <p><button type="submit" name="top" class="bt-design2" onclick="location.href=''">TOPへ</button></p>
   <br>
   <br>
   </form>

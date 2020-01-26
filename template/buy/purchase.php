@@ -11,11 +11,7 @@
     <link rel="stylesheet" href="./each/css/buy/purchase.css">
 </head>
 <body>
-<div id="header">
-  <ul>
-    <li><img src="image/site/logo_sq.png"><input type="text" placeholder="" class="Sinput"></li>
-  </ul>
-</div>
+<div id="wrapper">
 <br>
 <br>
 <br>
@@ -83,14 +79,7 @@
     <p>&copy; TRUSTme</p>
     </div>
   </div>
-</div>
-<div id="controller">
-  <ul>
-    <li><a href="#"><img src="image/site/logo_sq.png"></a></li>
-    <li><a href="#"><img src="image/icon/favorite-24px.svg"></a></li>
-    <li><a href="#"><img src="image/icon/chat-24px.svg"></a></li>
-    <li><a href="#"><img src="image/icon/account_circle-24px.svg"></a></li>
-  </ul>
-</div>
+  </div>
+  </div>
 </body>
 </html>

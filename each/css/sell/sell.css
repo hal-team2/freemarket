@@ -3,10 +3,13 @@
 
 
 
+
 /**********段落***********/
 
 .section img{
     width: 100px;
+  border-radius: 20px;
+  margin: 20px;
 }
 
 
@@ -55,6 +58,35 @@
     color: #888;
 }
 
+
+/*------- yonesho ------*/
+
+.button {
+    width: 100%;
+    height: auto;
+}
+
+.button li{
+  margin: 0 auto;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+.button li:nth-child(2){
+    margin-top: 50px;
+}
+
+.section {
+  width: 100%;
+}
+
+.name {
+  font-size: 2.0em;
+  font-weight: 800;
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
 
 
 
@@ -174,7 +206,7 @@
 
 /********項目名****************/
 
-    .sub{
+  /* .sub{
         color: purple;
         text-align: left;
         font-weight: bold;
@@ -192,6 +224,9 @@
         padding : 10px;
         font-size: 16px;
     }
-
+*/
 }
 /**************************************/
+
+
+
