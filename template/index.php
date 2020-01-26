@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="slick/slick.css">
   <link rel="stylesheet" href="each/css/index.css">
   <link rel="stylesheet" href="each/css/search/search.css">
+  
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -42,7 +43,7 @@
           <div class="trend Scontent">
             <h2>TREND<img src="image/icon/trending_up-24px.svg"></h2>
             <ul>
-              <li><span class="rank">1.TREND</span><span class="title">シューズ</span</li>
+              <li><span class="rank">1.TREND</span><span class="title">シューズ</span></li>
               <li><span class="rank">2.TREND</span><span class="title">shoes</span></li>
               <li><span class="rank">3.TREND</span><span class="title">zapatos</span></li>
               <li><span class="rank">4.TREND</span><span class="title">靴</span></li>
