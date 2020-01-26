@@ -43,7 +43,7 @@
   <br>
   <p class="sub">商品名<span class="required">必須</span></p>
   <p class="box"><input type="text" name="name" class="textbox" placeholder="商品名(最大40字)"></p>
-  <br>
+<!--   <br>
   <p class="sub">商品説明</p>
   <p class="box">
     <input type="hidden" name="summary[]" value="">
@@ -56,20 +56,24 @@
     <input type="checkbox" name="summary[]" value="Mサイズ">Mサイズ
     <input type="checkbox" name="summary[]" value="Lサイズ">Lサイズ
     <input type="checkbox" name="summary[]" value="フリーサイズ">フリーサイズ
-  </p>
+  </p> -->
   <br>
   <p class="sub">商品状態<span class="required">必須</span></p>
-  <p class="box">
+  <p class="box_c">
     <input type="hidden" name="condition[]" value="">
-    <input type="checkbox" name="condition[]" value="新品未使用">新品未使用
-    <input type="checkbox" name="condition[]" value="未使用に近い">未使用に近い
-    <input type="checkbox" name="condition[]" value="目立った傷や汚れなし">目立った傷や汚れなし
-    <input type="checkbox" name="condition[]" value="傷あり">傷あり
-    <input type="checkbox" name="condition[]" value="汚れあり">汚れあり
-    <input type="checkbox" name="condition[]" value="日焼けあり">日焼けあり
-    <input type="checkbox" name="condition[]" value="欠品">欠品
-    <input type="checkbox" name="condition[]" value="破損品">破損品
-    <input type="checkbox" name="condition[]" value="箱なし">箱なし
+    <input type="checkbox" name="condition[]" value="新品未使用">新品未使用　　　　　　
+    <input type="checkbox" name="condition[]" value="未使用に近い">未使用に近い　　　　
+    <br>
+    <input type="checkbox" name="condition[]" value="目立った傷や汚れなし">目立った傷や汚れなし　
+    <input type="checkbox" name="condition[]" value="傷あり">傷あり　　　　　　　
+    <br>
+    <input type="checkbox" name="condition[]" value="汚れあり">汚れあり　　　　　　　
+    <input type="checkbox" name="condition[]" value="日焼けあり">日焼けあり　　　　　
+    <br>
+    <input type="checkbox" name="condition[]" value="欠品">欠品　　　　　　　　　
+    <input type="checkbox" name="condition[]" value="破損品">破損品　　　　　　　
+    <br>
+    <input type="checkbox" name="condition[]" value="箱なし" class="left">箱なし　　　　　　　　
   </p>
   <br>
   <p class="sub">カテゴリ<span class="required">必須</span></p>
@@ -101,8 +105,8 @@
   <p class="sub">販売価格<span class="required">必須</span></p>
 <br>
   <p class="sub">商品優先登録</p>
-  <p class="box">
-  <input type="radio" name="priority" value="1">登録する
+  <p class="box_p">
+  <input type="radio" name="priority" value="1">登録する　
   <input type="radio" name="priority" value="0" checked>登録しない
   </p> 
 <br>

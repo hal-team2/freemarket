@@ -147,8 +147,10 @@ select{
 @media screen and (max-width:1000px){
 
 	.main{
+		margin-top: 180px;
+		margin-bottom: 180px;
 		width: 90%;
-		font-size: 28px;
+		font-size: 2.3em;
 	}
 
 	.content{
@@ -157,52 +159,84 @@ select{
 	}
 
 	.font_b{
-		font-size: 25px;
 		font-weight: bold;
+		font-size: 1.3em;
+		color: purple;
 	}
 
 	.sub{
-		padding: 0px 15px;
+		padding: 0px 30px;
 	}
 
 	.required{
-		font-size: 18px;
-		margin-left: 8px;
+		font-size: 0.8em;
+		margin-left: 15px;
 	}
 
 	.textbox{
 		padding : 15px 10px;
 		margin: 5px 3px 3px 15px;
-		font-size: 23px;
+		font-size: 1.0em;
+	}
+
+	.box_p{
+		margin-left: 20px;
+	}
+
+	.box_p input[type=radio]{
+		transform: scale(3.0);
+		margin-right: 20px;
+	}
+
+	.box_c{
+		margin-left: 30px;
+	}
+
+	.box_c input[type=checkbox]{
+		transform: scale(3.0);
+		margin-right: 20px;
+	}
+
+	.left{
+		margin-left: -415px;
+	}
+
+	.main input[type=file]{
+		font-size: 0.8em;
+		padding-top: 30px;
 	}
 
 	textarea{
 		padding : 15px 10px;
 		margin: 5px 3px 3px 15px;
-		font-size: 23px;
 	}
 
 	select{
 		padding : 15px 10px;
 		margin: 5px 3px 3px 15px;
-		font-size: 23px;
+		font-size: 1.0em;
+	}
+
+	option{
+		font-size: 0.4em;
 	}
 
 	.pricebox input{
 		padding : 15px 10px;
 		margin: 5px 40px 3px 0px;
+		font-size: 1.0em;
 	}
 
 	.bt-design{
-		width: 93%;
+		width: 95%;
 		padding : 18px;
-		font-size: 23px;
+		font-size: 1.0em;
 	}
 
 	.bt-design2{
-		width: 80%;
+		width: 95%;
 		padding : 15px;
-		font-size: 23px;
+		font-size: 1.0em;
 	}
 
 
