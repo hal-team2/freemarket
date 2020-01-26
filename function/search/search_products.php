@@ -28,7 +28,7 @@
 function search_products($member_id,$keyword){
 
 	$list = [];
-	$sql = "SELECT id,img_id FROM products INNER JOIN product_img ON products.id = product_img.product_id WHERE product_name LIKE'%".$keyword."%' ORDER BY RIGHT(id,5) DESC;";
+	$sql = "SELECT id,img_id FROM products INNER JOIN product_img ON products.id = product_img.product_id WHERE sell = 0 AND product_name LIKE'%".$keyword."%' ORDER BY RIGHT(id,5) DESC;";
 
 /*--------------データベース接続-------------------------*/
 	$cn = mysqli_connect(HOST,DB_USER,DB_PASS,DB_NAME);

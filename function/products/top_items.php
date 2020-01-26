@@ -8,16 +8,11 @@
 /*--------------------------------------*/
 
 
-//暫定で定数化
-//const HOST = 'localhost';
-//const DB_NAME = 'trustme';
-//const DB_USER = 'root';
-//const DB_PASS = '';
 
 /*---------主処理----------*/
 
 /*
-トップページの商品画像と商品idを取得する関数
+トップページの商品画像と商品idをランダム取得する関数
 引数：なし
 戻り値：連想配列
 'id'=>商品ID
@@ -25,8 +20,7 @@
 
 */
 
-
-function top_items(){
+function top_items($member_id){
 
 	$list = [];
 
@@ -39,7 +33,7 @@ function top_items(){
 	$row = mysqli_fetch_assoc($result);
 	$cnt = is_null($row['COUNT(id)']) ? 0 : $row['COUNT(id)'];
 
-	$sql = "SELECT product_id,img_id FROM product_img ORDER BY RAND() LIMIT ".$cnt.";";
+	$sql = "SELECT product_id,img_id FROM products INNER JOIN product_img ON products.id = product_img.product_id WHERE sell = 0 AND exhibitor_id != '".$member_id."' ORDER BY RAND() LIMIT ".$cnt.";";
 	$result = mysqli_query($cn,$sql);
 	mysqli_close($cn);
 
@@ -52,8 +46,5 @@ function top_items(){
 	}
 	return $list;
 }
-
-
-
 
 ?>

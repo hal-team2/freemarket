@@ -30,6 +30,8 @@ date_default_timezone_set('Asia/Tokyo');
 /*---------主処理----------*/
 function product_exhibit($upload_file,$product_name,$product_summary,$product_category,$product_condition,$product_decide,$product_price,$priority,$exhibitor_id){
 
+    $product_price = mb_convert_kana($product_price,'n');
+
 	//商品概要
     if(isset($product_summary) && is_array($product_summary)){
         $summary = implode(",", $product_summary);
@@ -40,7 +42,6 @@ function product_exhibit($upload_file,$product_name,$product_summary,$product_ca
     if(isset($product_condition) && is_array($product_condition)){
         $condition = implode(",", $product_condition);
     }
-
 
     //発送日時
     if($product_decide == 2){
@@ -78,7 +79,7 @@ function product_exhibit($upload_file,$product_name,$product_summary,$product_ca
 
 
     //書き込み
-    $sql_products = "INSERT INTO products(id,product_name,summary,category_id,product_condition,send_date,exhibitor_id)VALUES('".$product_id."','".$product_name."','".$summary."','".$product_category."','".$condition."','".$decide_date."','".$exhibitor_id."');";
+    $sql_products = "INSERT INTO products(id,product_name,summary,category_id,product_condition,send_date,exhibitor_id,sell)VALUES('".$product_id."','".$product_name."','".$summary."','".$product_category."','".$condition."','".$decide_date."','".$exhibitor_id."',0);";
     mysqli_query($cn,$sql_products);
     $sql_price = "INSERT INTO product_price(product_id,price)VALUES('".$product_id."','".$product_price."');";
     mysqli_query($cn,$sql_price);
@@ -98,12 +99,5 @@ function product_exhibit($upload_file,$product_name,$product_summary,$product_ca
 
     mysqli_close($cn);
 }
-
-
-//使用例
-//if(isset($_POST["product_name"]) && isset($_POST["summary"]) && isset($_POST["category"]) && isset($_POST["condition"]) && isset($_POST["decide_date"]) && isset($_POST["price"]) && isset($_POST["priority"])){
-//    product_exhibit($_FILES["pic"],$_POST["product_name"],$_POST["summary"],$_POST["category"],$_POST["condition"],$_POST["decide_date"],$_POST["price"],$_POST["priority"]);
-//}
-
 
 ?>
