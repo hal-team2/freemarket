@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>trustMe</title>
   <meta name="description" content="サイトキャプションを入力">
   <meta name="keywords" content="サイトキーワードを,で区切って入力">
   <link rel="stylesheet" href="public/css/flame.css">
@@ -11,6 +11,16 @@
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
   <![endif]-->
+  <style type="text/css">
+<?php if(isset($_SESSION['product_id']) == true && $_SESSION['buyer_id'] != ""){ ?>
+      .tuchi{display: block;}
+<?php }else { ?>
+      .tuchi{display: none;}
+<?php } ?>
+    
+    
+  </style>
+  
 </head>
   <body>
       <div class="exhibit"><a href="index.php?exhibit=1"></a></div>
@@ -29,5 +39,6 @@
           <li><a href="index.php?account=1"><img src="image/icon/account_circle.png"></a></li>
         </ul>
       </div>
+    <div class="tuchi"></div>
   </body>
 </html>

@@ -12,6 +12,7 @@
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
   <![endif]-->
+  
 <script src="public/js/jquery-3.4.1.min.js"></script>
   <script src="each/js/search/search.js"></script>
 </head>
