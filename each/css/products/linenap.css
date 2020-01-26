@@ -1,212 +1,171 @@
 /* CSS document */
 
-/*======= contents =======*/
-#contents {
-  position: absolute;
-  top: 0;
-  height: 100vh;
-  background-color: #38429D;
-  z-index: -1;
-}
-
-/*------- bg -------*/
-.bg li:nth-child(3){
-  border:solid black 3px;
-  float: left;
-  margin-top: 20px;
-}
-.bg li:nth-child(4){
-  float: left;
-  line-height: 50px;
-  margin-left: 30px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.bg li:nth-child(5){
+/*======= linenap =======*/
+#linenap {
   width: 100%;
-  border: solid black 3px;
-  overflow: hidden;
+  height: auto;
+  margin-top: 150px;
+  padding-bottom: 200px;
+}
+#linenap .Pimg{
+  padding-top: 100px;
   text-align: center;
 }
-
-/*------- backButton -------*/
-  .backButton {
-    background-color: white;
-    text-align: center;
-  }
-  .backButton img{
-    vertical-align: middle;
-  }
-  .backButton a{
-    display: block;
-    vertical-align: middle;
-  }
-  .backButton a:hover{
-    background: rgba(0,0,0,0.5);
-  }
-
-
-@media screen and (max-width: 1000px){
-  /*スマホ*/
-  
-  /*======= header =======*/
-  #header ul{
-    visibility: hidden;
-  }
-  
-  /*-------- img -------*/
-  .img img{
-    width: 100%;
-    margin-top: 150px;
-  }
-
-  /*------- bg -------*/
-  .bg {
-    background-color: white;
-    height: 100vh;
-  }
-  .bg li:nth-child(1){
-    font-size: 400%;
-    padding-left: 50px;
-    /* text-decoration: underline; */
-    border-bottom: solid black 1px;
-  }
-  .bg li:nth-child(2){
-    margin: 20px;
-    font-size: 400%;
-    /* padding-left:50px; */
-    text-align: end;
-  }
-  .bg li:nth-child(3){
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    margin: 40px;
-  }
-  .bg li:nth-child(4){
-    font-size: 200%;
-    margin: 40px;
-    line-height: 100px;
-  }
-  .bg li:nth-child(5){
-    width: 90%;
-    height: 300px;
-    margin: 0 auto;
-    font-size: 300%;
-    line-height: 300px;
-  }
-  .bg span{
-    font-size: 80%;
-  }
-  
-  /*------- backButton -------*/
-  .backButton {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    background-color: white;
-    line-height: 100px;
-    margin: 20px;
-  }
-  .backButton img{
-    width: 80px;
-/*    margin-left: 10px;*/
-  }
-  .backButton a,
-  .cart a{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-  }
-  .cart {
-    position: absolute;
-    top: 10px;
-    /* left: 0; */
-    right: 0;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    /* background-color: white; */
-    line-height: 100px;
-    margin: 20px;
-  }
-  .cart img{
-    width: 100px;
-  }
-  
+#linenap .Pimg img{
+  width: 500px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
+#linenap .buyButton a{
+  margin: 0 auto;
+  margin-top: 100px;
+  height: 100px;
+  width: 60%;
+  border-radius: 20px;
+  background-color: red;
+  display: block;
+  text-align: center;
+  line-height: 100px;
+  color: white;
+  font-size: 2.0em;
+}
+
+/*------- title -------*/
+#linenap .title{
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 50px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  background-color: darksalmon;
+
+}
+#linenap .title li{
+  height: 100px;
+  font-size: 2.5em;
+  border-bottom: solid black 1px;
+/*  text-align: center;*/
+  line-height: 100px;
+  margin-left: 30px;
+}
+#linenap .title li:nth-child(1){
+  padding: 5px;
+  width: 600px;
+}
+#linenap .title li:nth-child(2){
+  text-align: center;
+  width: 200px;
+}
+
+/*------- details -------*/
+.details {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.details .detail{
+  width: 55%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  text-align: center;
+  background-color: antiquewhite;
+}
+.details .detail li:nth-child(1){
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 70%;
+  line-height: 80px;
+  font-size: 2.5em;
+  border-bottom: solid black 1px;
+}
+.details .detail li:nth-child(1) span{
+}
+
+.details .detail li:nth-child(2){
+  line-height: 60px;
+  font-weight: 100;
+  font-size: 1.5em;
+}
+.details .detail li:nth-child(3){
+  width: 90%;
+  font-size: 2.0em;
+  font-weight: 100;
+  margin-bottom: 50px;
+  margin: 0 auto;
+}
+.details .detail li:nth-child(4){
+  margin-top: 25px;
+  line-height: 60px;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+.details .detail li:nth-child(5){
+  font-size: 2.0em;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+
+.details .condition{
+  width: 35%;
+  height: auto;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  text-align: center;
+  background-color: azure;
+  border-radius: 20px;
+}
+
+.details .condition li{
+  line-height: 30px;
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+.details .condition li:nth-child(1){
+  margin-top: 40px;
+}
+
+/*------- account -------*/
+.account {
+  width: 90%;
+  height: 100px;
+  line-height: 100px;
+  margin-left: 50px;
+  background-color: darkturquoise;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  border-radius: 20px;
+
+}
+.account ul{
+  display: flex;
+}
+.account img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+.account li:nth-child(2){
+  font-size: 3.0em;
+  margin-left: 50px;
+}
+
+/*------- backbutton -------*/
+.backButton{
+  position: fixed;
+  top: 25px;
+  right: 50px;
+  z-index: 200;
+}
+.backButton img{
+  width: 100px;
+}
+
 @media screen and (min-width: 1001px){
   /*PC*/
-  .img img{
-    width: 300px;
-    position: relative;
-    top: 50%;
-    transform: translate(0,-50%);
-  }
-  .img {
-    margin-top: 50px;
-    margin-left: 30px;
-    height: 400px;
-    width: 300px;
-    background-color: skyblue;
-    /* line-height: 300px; */
-  }
-  .bg {
-    height: 500px;
-    width: 700px;
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    transform: translate(-50%);
-    background-color: white;
-    display: flex;
-    border-radius: 20px;
-  }
-  .bg ul{
-    height: 400px;
-    width: 300px;
-    margin-left: 40px;
-    margin-top: 50px;
-    text-align: center;
-  }
-  .bg li:nth-child(1){
-    line-height: 80px;
-    height: 80px;
   
-  }
-  .bg li:nth-child(2){
-    border-bottom: solid black 1px;
-  }
-  .bg li:nth-child(3){
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-  }
-  .bg li:nth-child(5){
-    line-height: 200px;
-  }
-  
-  /*------- img -------*/
-  
-  
-  
-  /*------- backButton -------*/
-  .backButton {
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    line-height: 60px;
-    margin: 20px;
-  }
-  .backButton img{
-    width: 40px;
-  }
-  .backButton a{
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-  }
 }

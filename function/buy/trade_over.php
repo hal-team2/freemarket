@@ -10,7 +10,7 @@
 
 // //暫定で定数化
 // const HOST = 'localhost';
-// const DB_NAME = 'sd';
+// const DB_NAME = 'trustme';
 // const DB_USER = 'root';
 // const DB_PASS = '';
 
@@ -40,8 +40,13 @@ function trade_over($member_id,$product_id){
 	mysqli_set_charset($cn,"utf8");
 
 
-/*------------完了日時書き込み---------------------*/
-	$sql = "UPDATE member_trade_history SET trade_over_date = '".$date."' WHERE member_id ='".$member_id."' AND product_id ='".$product_id."';";
+/**---------商品価格呼び出し-----------**/
+	$sql = "SELECT price FROM product_price WHERE product_id ='".$product_id."';";
+	$result = mysqli_query($cn,$sql);
+	$row = mysqli_fetch_assoc($result);
+
+/*------------データベース書き込み---------------------*/
+	$sql = "INSERT INTO member_trade_history(member_id,product_id,price,trade_over_date) VALUES('".$member_id."','".$product_id."',".$row['price'].",'".$date."');";
 	mysqli_query($cn,$sql);
 
 
@@ -67,5 +72,6 @@ function trade_over($member_id,$product_id){
 	mysqli_close($cn);
 
 }
+
 
 ?>
