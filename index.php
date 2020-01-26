@@ -133,7 +133,7 @@ if(isset($_GET['deposit']) == true){
 if(isset($_GET['eva']) == true){
 
   $exhibitor = buyer_info($_SESSION['exhibitor']);
-  require 'template/evaluation/evaluation.php';
+  require 'template/evaluation/eva.php';
   require 'template/flame.php';
   exit;
 }
