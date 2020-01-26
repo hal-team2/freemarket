@@ -64,6 +64,7 @@ button{
   background-color: white;
   background-image: url(../../image/icon/baseline_search_black_24dp.png);
   background-repeat: no-repeat;
+
 }
 #header img{
   height: 50px;
@@ -96,6 +97,7 @@ button{
 
 /************* スマホ*************/
 @media screen and (max-width:1000px){
+
   
   /*======= header ========*/
   #header {
@@ -108,11 +110,14 @@ button{
   }
   #header input{
     width: 700px;
-    height: 100px;
+    height: 90px;
     background-size: 90px;
     background-position: 10px center;
     border-radius: 20px;
+    font-size: 2.4em;
+    padding-left: 100px;
   }
+
   #header li:nth-child(2){
     visibility: hidden;
   }
