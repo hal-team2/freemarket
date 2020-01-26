@@ -12,6 +12,7 @@
 <body>
 <div id="wrapper">
 <div class="main">
+<form action="index.php" method="GET" enctype="multipart/form-data">
   <br>
   <div class="section">
     <p>商品が購入されました。<br>集荷日を指定してください。</p>
@@ -24,9 +25,9 @@
     <br>
     <select name="date">
     <option value="">日付を選択</option>
-    <option value="2020/01/28">2020/01/28</option>
-    <option value="2020/01/29">2020/01/29</option>
-    <option value="2020/01/30">2020/01/30</option>
+    <?php foreach($day as $value){ ?>
+      <option value="<?php echo $value;?>"><?php echo $value;?></option>
+    <?php }?>
     </select>
   </div>
   <br>
@@ -42,7 +43,6 @@
   <br>
   <hr>
   <br>
-  <form action="index.php" method="POST" enctype="multipart/form-data">
   <div class="section">
     <h2 class="sub">商品情報</h2>
     <ul>
@@ -64,12 +64,12 @@
   <br>
   <ul class="button">
     <li><button type="submit" name="sell_confirm" class="bt-design">確認</button></li>
-    <li><button type="submit" name="top" class="bt-design2" onclick="location.href=''">TOPへ</button></li>
+</form>
+    <li><button type="submit" name="top" class="bt-design2" onclick="location.href='index.php'">TOPへ</button></li>
   </ul>
   <br>
   <br>
   <br>
-  </form>
 </div>
   <div class="footer">
   <div class="content">

@@ -21,25 +21,25 @@
 <br>
 <br>
 <div class="main">
+<form action="index.php" method="POST" enctype="multipart/form-data">
   <br>
   <br>
   <div class="section">
     <h2 class="sub">集荷日</h2>
     <br>
-    <p class="bold">2019/01/28</p>
-    <p class="bold">14:00～16:00</p>
+    <p class="bold"><?php echo $_GET['date'];?></p>
+    <p class="bold"><?php echo $_GET['time'];?></p>
   </div>
   <br>
   <br>
   <hr>
   <br>
-  <form action="index.php" method="POST" enctype="multipart/form-data">
   <div class="section">
     <h2 class="sub">商品情報</h2>
-    <img src="sample.jpg">
     <ul>
-      <li>商品名：帽子</li>
-      <li>商品価格：30000</li>
+      <li><img src="image/products/<?php echo $product['img'] ?>"></li>
+      <li>商品名：<?php echo $product['name'] ?></li>
+      <li>商品価格：<?php echo $product['price'] ?></li>
     </ul>
   </div>
 <!--   <hr>
@@ -52,12 +52,15 @@
   <br>
   <br>
   <br>
+  <input type="hidden" name="date" value="<?php echo $_GET['date'];?>">
+  <input type="hidden" name="time" value="<?php echo $_GET['time'];?>">
   <p><button type="submit" name="collect" class="bt-design">確定</button></p>
+</form>
   <br>
-  <p><button type="submit" name="return" class="bt-design2" onclick="location.href=''">戻る</button></p>
+  <p><button type="submit" name="return" class="bt-design2" onclick="location.href='index.php?sell=1'">戻る</button></p>
   <br>
   <br>
-  </form>
+
 </div>
 
 <div class="footer">

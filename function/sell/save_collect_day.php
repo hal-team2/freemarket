@@ -47,10 +47,9 @@ function save_collect_day($product_id,$date,$time){
 
 	mysqli_close($cn);
 
-	session_start();
 	$_SESSION['buyer'] = $row['buyer_id'];
 	$_SESSION['exhibitor'] = $row['exhibitor_id'];
-	unset($_SESSION['exhibitor_id']);
+	$_SESSION['exhibitor_id'] = "";
 
 }
 

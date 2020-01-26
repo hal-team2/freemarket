@@ -21,12 +21,13 @@ require 'function/products/item_info.php';
 require 'function/buy/buyer_info.php';
 require 'function/buy/purchase_info.php';
 require 'function/buy/purchase.php';
+require 'function/sell/select_day.php';
+require 'function/sell/save_collect_day.php';
 
-$now_account_id = "1";
-$buy_account_id = "2";
+$now_account_id = "111";
+$buy_account_id = "222";
 $test_product = "B20000009";
 /*---------主処理----------*/
-
 
 //会員情報ページ
 if(isset($_GET['id']) == true){
@@ -98,6 +99,7 @@ if(isset($_POST['purchase']) == true){
 if(isset($_GET['sell']) == true){
   $product = item_info($_SESSION['product_id']);
   $buyer = buyer_info($_SESSION['buyer_id']);
+  $day = select_day($_SESSION['product_id']);
   require 'template/sell/sell.php';
   require 'template/flame.php';
   exit;
@@ -105,6 +107,15 @@ if(isset($_GET['sell']) == true){
 
 //発送日確認ページ
 if(isset($_GET['sell_confirm']) == true){
+  $product = item_info($_SESSION['product_id']);
+  require 'template/sell/sell_confirm.php';
+  require 'template/flame.php';
+  exit;
+}
+
+//集荷日確定処理
+if(isset($_POST['collect']) == true){
+	save_collect_day($_SESSION['product_id'],$_POST['date'],$_POST['time']);
 }
 
 //入金処理
