@@ -13,12 +13,6 @@
 
 body {
   background-color: #EFD8EB;
-/*
-  background-image: url(../../image/site/bodyBackground.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-*/
 }
 
 /* <input> */
@@ -39,11 +33,10 @@ button{
    overflow-y: scroll;
    width: 100%;
    height: 100vh;
-/*   background-image: url(../../image/site/bodyBackground.png);*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-} 
+}
 
 /*======= header =======*/
 #header {
@@ -64,6 +57,7 @@ button{
   background-color: white;
   background-image: url(../../image/icon/baseline_search_black_24dp.png);
   background-repeat: no-repeat;
+
 }
 #header img{
   height: 50px;
@@ -93,9 +87,22 @@ button{
   margin: 0 auto;
 }
 
+/*------- tuchi -------*/
+.tuchi {
+  position: absolute;
+  bottom: 90px;
+  left: 640px;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: red;
+  z-index: 500;
+}
+
 
 /************* スマホ*************/
 @media screen and (max-width:1000px){
+
   
   /*======= header ========*/
   #header {
@@ -108,11 +115,14 @@ button{
   }
   #header input{
     width: 700px;
-    height: 100px;
+    height: 90px;
     background-size: 90px;
     background-position: 10px center;
     border-radius: 20px;
+    font-size: 2.4em;
+    padding-left: 100px;
   }
+
   #header li:nth-child(2){
     visibility: hidden;
   }

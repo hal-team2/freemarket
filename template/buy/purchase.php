@@ -5,17 +5,13 @@
     <title>購入手続画面</title>
     <meta name="description" content="サイトキャプションを入力">
     <meta name="keywords" content="サイトキーワードを,で区切って入力">
-    <link rel="stylesheet" href="public/css/flame.css">
-    <link rel="stylesheet" href="public/css/contoroller.css">
-    <link rel="stylesheet" href="public/css/main.css">
-    <link rel="stylesheet" href="each/css/buy/purchase.css">
+    <link rel="stylesheet" href="./public/css/flame.css">
+    <link rel="stylesheet" href="./public/css/contoroller.css">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./each/css/buy/purchase.css">
 </head>
 <body>
-<div id="header">
-  <ul>
-    <li><img src="image/site/logo_sq.png"><input type="text" placeholder="" class="Sinput"></li>
-  </ul>
-</div>
+<div id="wrapper">
 <br>
 <br>
 <br>
@@ -26,13 +22,13 @@
   <br>
   <hr>
   <br>
-  <form action="index.php" method="POST" enctype="multipart/form-data">
+<form action="index.php" method="GET" enctype="multipart/form-data">
 <div class="section">
   <h2 class="sub">商品情報</h2>
-  <img src="image/products/F20000001.jpg">
+  <img src="image/products/<?php echo $item['img'];?>">
   <ul>
-    <li>商品名：帽子</li>
-    <li>商品価格：30000</li>
+    <li>商品名：<?php echo $item['name'];?></li>
+    <li>商品価格：<?php echo $item['price'];?></li>
   </ul>
 </div>
   <br>
@@ -40,12 +36,12 @@
   <br>
 <div class="section">
   <h2 class="sub">ポイントの使用</h2>
-    <p><input type="text" name="use_point" size="8" class="box"> P</p>
-    <p>所持ポイント:0000P</p>
+    <p><input type="number" name="use_point" size="8" class="box" value="0" max="<?php echo $buyer['point'];?>"> P</p>
+    <p>所持ポイント: <?php echo $buyer['point'];?>P</p>
   <br>
   <h2 class="sub">売上金の使用</h2>
-    <p><input type="text" name="use_proceed" size="8" class="box"> 円</p>
-    <p>所持売上:0000円</p>
+    <p><input type="number" name="use_proceed" size="8" class="box" value="0" max="<?php echo $buyer['proceeds'];?>"> 円</p>
+    <p>所持売上: <?php echo $buyer['proceeds'];?>円</p>
 </div>
   <br>
   <hr>
@@ -62,19 +58,19 @@
   <br>
 <div class ="section">
   <h2 class="sub">配送先</h2>
-    <p>〇田〇郎<br>
-    〒000-0000<br>
-    〇〇県〇〇〇市〇〇〇〇〇〇〇〇</p>
+    <p><?php echo $buyer['user_name'];?><br>
+    <?php echo $buyer['address'];?></p>
 </div>
   <br>
 <br>
 <br>
-<p><button type="submit" name="purchase" class="bt-design">購入確認</button></p>
-<br>
-<p><button type="submit" name="top" class="bt-design2" onclick="location.href=''">キャンセル</button></p>
-<br>
+<input type="hidden" name="item" value="<?php echo $_GET['buy'];?>">
+<p><button type="submit" name="p_confirm" class="bt-design">購入確認</button></p>
 <br>
 </form>
+<p><button type="submit" name="return" class="bt-design2" onclick="location.href='./index.php?product=<?php echo $_GET['buy'];?>'">キャンセル</button></p>
+<br>
+<br>
 </div>
 
 <div class="footer">
@@ -83,14 +79,7 @@
     <p>&copy; TRUSTme</p>
     </div>
   </div>
-</div>
-<div id="controller">
-  <ul>
-    <li><a href="#"><img src="image/site/logo_sq.png"></a></li>
-    <li><a href="#"><img src="image/icon/favorite-24px.svg"></a></li>
-    <li><a href="#"><img src="image/icon/chat-24px.svg"></a></li>
-    <li><a href="#"><img src="image/icon/account_circle-24px.svg"></a></li>
-  </ul>
-</div>
+  </div>
+  </div>
 </body>
 </html>

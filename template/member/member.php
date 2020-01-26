@@ -7,70 +7,19 @@
   <meta name="keywords" content="サイトキーワードを,で区切って入力">
   <link rel="stylesheet" href="public/css/flame.css">
   <link rel="stylesheet" href="public/css/contoroller.css">
-  <link rel="stylesheet" href="each/css/index.css">
-  <link rel="stylesheet" href="each/css/search/search.css">
   <link rel="stylesheet" href="each/css/member/member.css">
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
   <![endif]-->
-  <script src="public/js/jquery-3.4.1.min.js"></script>
-  <script src="public/js/masonry.pkgd.min.js"></script>
-  <script src="each/js/member/member.js"></script>
+  
 </head>
   <body>
     <div id="wrapper">
-      <div id="header">
-        <ul>
-          <li><img src="image/site/logo_sq.png"><input type="text" placeholder="" class="Sinput"></li>
-          <li><a href="index.php?back=1"><img src="image/icon/backspace-24px.svg"></a></li>
-<!--          <li><a href="../index.php?">会員登録</a><a href="">ログイン</a></li>-->
-        </ul>
-      </div>
-      <div id="search">
-        <div id="popular">
-          <h2>TREND<img src="image/icon/trending_up-24px.svg"></h2>
-          <ul>
-            <li>うんこ</li>
-            <li>ポケモン剣盾</li>
-            <li>Mk</li>
-            <li>徹夜</li>
-          </ul>
-        </div>
-        <div id="category">
-          <h2>CATEGORY<img src="image/icon/category-24px.svg"></h2>
-          <div class="categoryBox">
-            <div class="Sbox">
-              <ul>
-                <li><img src="image/icon/shoes.png"></li>
-                <li>SHOSE</li>
-              </ul>
-            </div>
-            <div class="Sbox">
-              <ul>
-                <li><img src="image/icon/toy.png"></li>
-                <li>TOY</li>
-              </ul>
-            </div>
-            <div class="Sbox">
-              <ul>
-                <li><img src="image/icon/wearing.png"></li>
-                <li>WEAR</li>
-              </ul>
-            </div>
-            <div class="Sbox">
-              <ul>
-                <li><img src="image/icon/book.png"></li>
-                <li>BOOK</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
       <div id="member">
         <div class="memberIn">
           <ul class="account">
-            <li><img src="image/icon/cavi.jpg"></li>
+            <li><img src="image/icon/account_circle.png"></li>
             <li>Name</li>
           </ul>
           <ul class="country">
@@ -81,31 +30,10 @@
         <p>profile</p>
         <div class="memberIn_2">
           <ul>
-            <li><a>5</a><a>500</a></li>
+            <li><a>5/500</a></li>
             <li>★★★☆☆</li>
           </ul>
         </div>
-      </div>
-      <div id="contents">
-        <div class="box img"><a href=""><img src="image/products/sample1.jpg"></a></div>
-        <div class="box img"><a href=""><img src="image/products/sample2.jpg"></a></div>
-        <div class="box img"><a href=""><img src="image/products/sample3.jpg"></a></div>
-        <div class="box img"><a href=""><img src="image/products/sample4.jpg"></a></div>
-        <div class="box img"><a href=""><img src="image/products/sample5.jpg"></a></div>
-        <div class="box img"><a href=""><img src="image/products/sample6.jpg"></a></div>
-        <div class="box img"><a href=""><img src="image/products/sample7.jpg"></a></div>
-        <div class="box img"><a href=""><img src="image/products/sample8.jpg"></a></div>
-        <div class="box img"><a href=""><img src="image/products/sample9.jpg"></a></div>
-        <div class="box img"><a href=""><img src="image/products/sample10.jpg"></a></div>
-        <div class="box img"><a href=""><img src="image/products/sample11.jpg"></a></div>
-      </div>
-      <div id="controller">
-        <ul>
-          <li><a href=""><img src="image/site/logo_sq.png"></a></li>
-          <li><a href=""><img src="image/icon/favorite-24px.svg"></a></li>
-          <li><a href=""><img src="image/icon/chat-24px.svg"></a></li>
-          <li><a href=""><img src="image/icon/account_circle-24px.svg"></a></li>
-        </ul>
       </div>
     </div>
   </body>

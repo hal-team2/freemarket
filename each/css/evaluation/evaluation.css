@@ -1,0 +1,83 @@
+/*======= evaluation =======*/
+#evaluation {
+  position: absolute;
+  top: 170PX;
+  left: 50%;
+  transform: translate(-50%);
+  width: 90%;
+  height: auto;
+  padding: 50px;
+  background-color: #787cbf;
+  border-radius: 20px;
+  color: white;
+}
+#evaluation ul{
+  width: 100%;
+}
+#evaluation li{
+  font-size: 2.0em;
+}
+
+.eva{
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 400px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: white;
+}
+.eva button{
+  color: #787cbf;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  font-weight: 900;
+  font-size: 1.0em;
+  text-align: center;
+}
+.product {
+  font-size: 1.2em;
+  font-weight: 900;
+}
+.buyer {
+  font-weight: 900;
+}
+
+/*======= evaForm =======*/
+#evaForm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50%;
+  height: auto;
+  padding: 50px;
+  background-color: #787cbf;
+  border-radius: 20px;
+  color: white;
+  display: none;
+}
+#evaForm ul{
+  display: flex;
+}
+#evaForm input{
+  border-radius: 20px;
+  width: 150px;
+  height: auto;
+  padding: 10px;
+  font-size: 2.0em;
+  background-color: white;
+  color: #787cbf;
+}
+#evaForm select{
+  width: 150px;
+  height: 70px;
+  font-size: 2.0em;
+}
+option {
+  font-size: 0.5em;
+}
+#evaForm li:nth-child(2){
+  margin-left: 80px;
+}
