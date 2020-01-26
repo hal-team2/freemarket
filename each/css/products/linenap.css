@@ -79,8 +79,6 @@
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
   text-align: center;
-  background-color: #bfbc78;
-  background-color: #BA78BE;
   background-color: #EFD8EB;
 }
 .details .detail li:nth-child(1){
@@ -124,8 +122,6 @@
   height: auto;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
   text-align: center;
-  background-color: #78bfbc;
-  background-color: #BA78BE;
   background-color: #EFD8EB;
   border-radius: 20px;
 }

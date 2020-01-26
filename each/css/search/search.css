@@ -85,7 +85,7 @@
 
 /*------- sujest -------*/
 .sujest {
-  background-color: aqua;
+  background-color: #EFD8EB;
 }
 .sujest .sujestIn_1 li{
   width: 100%;
@@ -98,7 +98,7 @@
 .sujest .sujestIn_2 {
   width: 100%;
   height: 500px;
-  background-color: orangered;
+  background-color: #F2F2C6;
   display: flex;
   justify-content: space-around;
   margin-top: 80px;
@@ -111,6 +111,7 @@
   border-radius: 20px;
 }
 .sujest button{
+  color: #BA78BE;
   position: relative;
   left: 50%;
   transform: translate(-50%);
@@ -118,13 +119,14 @@
   font-size: 2.0em;
   width: 200px;
   line-height: 80px;
-  border: solid black 1px;
+  border: solid #BA78BE 2px;
   text-align: center;
 }
 
 /*-------- trend -------*/
 .trend {
-  background-color: aquamarine;
+  background-color: #EFD8EB;
+  color: #702075;
 }
 .trend h2{
   display: flex;
@@ -146,7 +148,7 @@
 }
 .trend .rank{
   font-size: 2.0em;
-  color: gray;
+  color: #9b42a1;
   text-align: center;
   line-height: 100px;
 /*  margin-left: 30px;*/
@@ -157,14 +159,13 @@
 /*  width: 100%;*/
 /*  line-height: 100px;*/
   font-size: 2.2em;
-  color: black;
   position: relative;
   top: 55px;
   left: -130px;
 }
 .trend .Scount{
   font-size: 2.0em;
-  color: gray;
+  color: #9b42a1;
   position: relative;
   top: 110px;
   left: -280px;
@@ -182,7 +183,7 @@
 /*------- category -------*/
 
 .category {
-  background-color: blueviolet;
+  background-color: #EFD8EB;
 }
 .category h2{
   position: relative;
@@ -195,6 +196,7 @@
   margin-top: 110px;
   padding-left: 30px;
   font-size: 3.0em;
+  color: #702075;
 /*  background-color: aqua;*/
 }
 .category img{
@@ -282,8 +284,8 @@
 /*  background-color: red;*/
 }
 .slickDot li.slick-active button::before{
-  border-bottom: solid red 10px;
-  color: orangered;
+  border-bottom: solid #9b42a1 10px;
+  color: #702075;
 }
 .slickDot li:nth-child(1) button::before{
   content: 'おすすめ';

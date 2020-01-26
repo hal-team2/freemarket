@@ -42,7 +42,7 @@
           <div class="trend Scontent">
             <h2>TREND<img src="image/icon/trending_up-24px.svg"></h2>
             <ul>
-              <li><span class="rank">1.TREND</span><span class="title">シューズ</span><span class="Scount">n件の検索</span></li>
+              <li><span class="rank">1.TREND</span><span class="title">シューズ</span</li>
               <li><span class="rank">2.TREND</span><span class="title">shoes</span></li>
               <li><span class="rank">3.TREND</span><span class="title">zapatos</span></li>
               <li><span class="rank">4.TREND</span><span class="title">靴</span></li>
