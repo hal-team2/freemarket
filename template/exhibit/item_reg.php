@@ -43,21 +43,25 @@
   <br>
   <p class="sub">商品名<span class="required">必須</span></p>
   <p class="box"><input type="text" name="name" class="textbox" placeholder="商品名(最大40字)"></p>
-<!--   <br>
-  <p class="sub">商品説明</p>
-  <p class="box">
+  <br>
+<!--   <p class="sub">商品説明</p>
+  <p class="box_c"> -->
     <input type="hidden" name="summary[]" value="">
-    <input type="checkbox" name="summary[]" value="正規品">正規品
+<!--     <input type="checkbox" name="summary[]" value="正規品">正規品
     <input type="checkbox" name="summary[]" value="限定品">限定品
+    <br>
     <input type="checkbox" name="summary[]" value="保証書付き">保証書付き
     <input type="checkbox" name="summary[]" value="値引き可">値引き可
+    <br>
     <input type="checkbox" name="summary[]" value="即購入可">即購入可
     <input type="checkbox" name="summary[]" value="Sサイズ">Sサイズ
+    <br>
     <input type="checkbox" name="summary[]" value="Mサイズ">Mサイズ
     <input type="checkbox" name="summary[]" value="Lサイズ">Lサイズ
-    <input type="checkbox" name="summary[]" value="フリーサイズ">フリーサイズ
-  </p> -->
-  <br>
+    <br>
+    <input type="checkbox" name="summary[]" value="フリーサイズ" class="left">フリーサイズ
+  </p>
+  <br> -->
   <p class="sub">商品状態<span class="required">必須</span></p>
   <p class="box_c">
     <input type="hidden" name="condition[]" value="">
