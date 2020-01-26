@@ -14,8 +14,10 @@
   
 </head>
   <body>
-    <form action="index.php" method="get" enctype="multipart/form-data">
-      <p><input type="text" name="login"></p>
+    <form action="../index.php" method="get" enctype="multipart/form-data">
+      <p>ID<input type="text" name="login_id"></p>
+      <input type="submit" value="ログイン">
+
     </form>
   </body>
 </html>
