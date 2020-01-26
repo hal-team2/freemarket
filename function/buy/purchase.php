@@ -62,7 +62,6 @@ function purchase($member_id,$product_id,$use_proceed,$use_point){
 
 	mysqli_close($cn);
 
-	session_start();
 	$_SESSION['product_id'] = $product_id;
 	$_SESSION['buyer_id'] = $member_id;
 	$_SESSION['exhibitor_id'] = $row['exhibitor_id'];

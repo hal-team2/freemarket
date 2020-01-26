@@ -9,7 +9,10 @@
 
 session_start();
 
-$_SESSION['test'] = 2;
+//$_SESSION['testbuy'] = 2;
+//$_SESSION['testex'] = 1;
+//$_SESSION['testpro'] = "B20000009";
+
 
 require 'function/exhibit/product_exhibit.php';//<=ここでDBの情報設定してるよ
 require 'function/products/top_items.php';
@@ -88,7 +91,7 @@ if(isset($_GET['p_confirm']) == true){
 
 //購入処理
 if(isset($_POST['purchase']) == true){
-  purchase($account_id,$_POST['p_item'],$_POST['proceed'],$_POST['point']);
+  purchase($now_account_id,$_POST['p_item'],$_POST['proceed'],$_POST['point']);
 }
 
 //発送日時指定
@@ -100,28 +103,45 @@ if(isset($_GET['sell']) == true){
   exit;
 }
 
+//入金処理
+if(isset($_GET['deposit']) == true){
+  $_SESSION['buyer_id'] = "";
+}
+
 //通知ページ
 if(isset($_GET['notification']) == true){
 
-  if(isset($_SESSION['test']) == true){
+  if(isset($_SESSION['product_id']) == false){
+    require 'template/notification/notification0.php';
+    require 'template/flame.php';
+    exit;
+  }
+  else if($_SESSION['exhibitor_id'] == $now_account_id && $_SESSION['exhibitor_id'] != ""){
+    //出品者
+      
+    $product = item_info($_SESSION['product_id']);
+    $buyer = buyer_info($_SESSION['buyer_id']);
+    require 'template/notification/notification1.php';
+    require 'template/flame.php';
+    exit;
+  }
+  else if($_SESSION['buyer_id'] == $now_account_id && $_SESSION['buyer_id'] != ""){
+    //購入者
     
-    if($now_account_id == 1){
-      require 'template/notification/notification1.php';
-      require 'template/flame.php';
-      exit;
-    }
-    else {
-      require 'template/notification/notification2.php';
-      require 'template/flame.php';
-      exit;
-    }
-  
+    $product = item_info($_SESSION['product_id']);
+    require 'template/notification/notification2.php';
+    require 'template/flame.php';
+    exit;
+  }
+  else {
+    require 'template/notification/notification0.php';
+    require 'template/flame.php';
+    exit;
   }
   
   
-  require 'template/notification/notification0.php';
-  require 'template/flame.php';
-  exit;
+  
+  
 }
 
 //TOPページ
