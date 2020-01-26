@@ -16,8 +16,8 @@
 </head>
   <body>
     <div id="wrapper">
-      <div id="linenap">
         <p class="Pimg"><img src="image/products/<?php echo $product_detail['img']; ?>"></p>
+      <div id="linenap">
         <ul class="title">
           <li><?php  echo $product_detail['name'] ?></li>
         </ul>
@@ -37,13 +37,12 @@
         </div>
         <div class="account">
           <ul>
-            <li><img src="image/icon/cavi.jpg"></li>
+            <li><img src="image/icon/account_circle.png"></li>
             <li>name</li>
           </ul>
         </div>
-        <p class="buyButton"><a href="index.php?buy=<?php echo $product_detail['id'] ?>">購入する</a></p>
       </div>
-      
+        <p class="buyButton"><a href="index.php?buy=<?php echo $product_detail['id'] ?>">購入する</a></p>
       <p class="backButton"><a href="index.php"><img src="image/icon/backspace.png"></a></p>
       
     </div>

@@ -22,7 +22,7 @@
   <body>
     <div id="wrapper">
       <id id="notification">
-        <p>通知はありません。</p>
+        <p><span class="product">通知はありません。</span></p>
       </id>
     </div>
   </body>
