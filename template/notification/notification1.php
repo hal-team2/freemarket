@@ -23,7 +23,7 @@
     <div id="wrapper">
       <id id="notification">
         <ul>
-          <li><span class="product">「深い青色をした帽子」</span>が <sapn class="buyer">梅野結衣</sapn> さんによって購入されました。発送日時を指定してください。</li>
+          <li><span class="product">「<?php echo $product['name'] ?>」</span>が <sapn class="buyer"><?php echo $buyer['user_name'] ?></sapn> さんによって購入されました。発送日時を指定してください。</li>
           <li class="sell"><a href="index.php?sell=1">発送日時を指定する</a></li>
         </ul>
       </id>

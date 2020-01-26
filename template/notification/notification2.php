@@ -23,8 +23,8 @@
     <div id="wrapper">
       <id id="notification">
         <ul>
-          <li><span class="product">「深い青色をした帽子」</span>を購入しました。入金してください。</li>
-          <li class="sell"><a href="index.php?sell=1">入金する</a></li>
+          <li><span class="product">「<?php echo $product['name'] ?>」</span>を購入しました。入金してください。</li>
+          <li class="sell"><a href="index.php?deposit=1">入金する</a></li>
         </ul>
       </id>
     </div>
