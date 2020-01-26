@@ -13,12 +13,6 @@
 
 body {
   background-color: #EFD8EB;
-/*
-  background-image: url(../../image/site/bodyBackground.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-*/
 }
 
 /* <input> */
@@ -39,11 +33,10 @@ button{
    overflow-y: scroll;
    width: 100%;
    height: 100vh;
-/*   background-image: url(../../image/site/bodyBackground.png);*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-} 
+}
 
 /*======= header =======*/
 #header {
@@ -92,6 +85,18 @@ button{
 #contents {
   width: 100%;
   margin: 0 auto;
+}
+
+/*------- tuchi -------*/
+.tuchi {
+  position: absolute;
+  bottom: 90px;
+  left: 640px;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: red;
+  z-index: 500;
 }
 
 
